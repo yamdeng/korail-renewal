@@ -1,0 +1,78 @@
+{
+    "version": "1.1.0",
+    "type": "interactive",
+    "service_type": 3,
+    "sequence": 1530249832495344,
+    "timestamp": 1530249832,
+    "source": {
+        "type": 2,
+        "userid": "1386053411520457"
+    },
+    "user_area": {
+        "templates": [
+            {
+                "text": "출발지",
+                "value": null
+            },
+            {
+                "text": "도착지",
+                "value": null
+            }
+        ]
+    },
+    "input_area": {
+        "slide_info": {
+            "status": {
+                "slide_on": true
+            },
+            "title": {
+                "default": "여기를 위로 올려주세요."
+            }
+        },
+        "home": {
+            "type": "postback",
+            "value": "메뉴_홈",
+            "text": "홈"
+        },
+        "submit": {
+            "type": "postback",
+            "value": "경로_검색",
+            "text": "확인"
+        },
+        "templates": {
+            "type": "layer",
+            "template": [
+                {
+                    "title": "즐겨찾기 경로를 선택해 주세요.",
+                    "subtitle": null,
+                    "type": "list",
+                    "template": {
+                        "buttons": [
+                            {
+                                "value": "~~",
+                                "text": "양재역->동대문역"
+                            },
+                            {
+                                "value": "~~",
+                                "text": "어부동상회->대보초등학교"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "message": {
+        "question": {
+            "templates": [
+                {
+                    "type": "text",
+                    "template": {
+                        "message": "즐겨찾기 경로를 선택해 주세요."
+                    }
+                }
+            ]
+        }
+    },
+    "id": "교통_즐겨찾기"
+}

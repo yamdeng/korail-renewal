@@ -1,0 +1,70 @@
+{
+    "version": "1.1.0",
+    "type": "interactive",
+    "service_type": 3,
+    "sequence": 1534918186164273,
+    "timestamp": 1534918186,
+    "source": {
+        "type": 3,
+        "userid": "Uff2ad4af513235b82e10256e30eddce7"
+    },
+    "user_area": null,
+    "input_area": {
+        "slide_info": {
+            "status": {
+                "slide_on": true
+            },
+            "title": {
+                "default": "여기를 위로 올려주세요."
+            }
+        },
+        "home": {
+            "type": "postback",
+            "value": "메뉴_홈",
+            "text": "홈"
+        },
+        "submit": null,
+        "templates": {
+            "type": "layer",
+            "template": [
+                {
+                    "subtitle": null,
+                    "title": "검색 방법을 선택해 주세요.",
+                    "type": "richbutton",
+                    "template": {
+                        "buttons": [
+                            {
+                                "type": "postback",
+                                "value": "출발지/도착지 경로검색",
+                                "text": "출발지/도착지 경로검색"
+                            },
+                            {
+                                "type": "postback",
+                                "value": "즐겨찾기 경로",
+                                "text": "즐겨찾기 경로"
+                            },
+                            {
+                                "type": "postback",
+                                "value": "최근검색 경로",
+                                "text": "최근검색 경로"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "message": {
+        "question": {
+            "templates": [
+                {
+                    "type": "text",
+                    "template": {
+                        "message": "통합교통 경로검색 서비스를 시작합니다."
+                    }
+                }
+            ]
+        }
+    },
+    "id": "교통_처음"
+}
