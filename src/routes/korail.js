@@ -11,7 +11,7 @@ router.post('/requestMessage', function(req, res) {
     // request : 추가 파라미터
 
     // const type = req.body.type;
-    const value = req.body.value;
+    const value = req.body.message.template.query;
     const jsonFileName = value;
     let jsonString = fs.readFileSync(__dirname + '/json/' + jsonFileName + '.json', 'utf8');
     let result = JSON.parse(jsonString);
