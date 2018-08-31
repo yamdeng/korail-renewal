@@ -1,0 +1,869 @@
+{
+    "version": "1.1.0",
+    "type": "replace_interactive",
+    "service_type": 3,
+    "sequence": 1530249832495344,
+    "timestamp": 1530249832,
+    "source": {
+        "type": 2,
+        "userid": "1386053411520457"
+    },
+    "user_area": null,
+    "input_area": {
+        "slide_info": {
+            "status": {
+                "slide_on": false
+            },
+            "title": {
+                "default": "여기를 위로 올려주세요."
+            }
+        },
+        "home": {
+            "type": "postback",
+            "value": "메뉴_홈",
+            "text": "홈"
+        },
+        "submit": null,
+        "templates": {
+            "type": "layer",
+            "template": [
+                {
+                    "title": "어떤 서비스를 원하시나요?",
+                    "subtitle": null,
+                    "type": "richbutton",
+                    "template": {
+                        "buttons": [
+                            {
+                                "type": "postback",
+                                "value": "새로 검색하기",
+                                "text": "새로 검색하기"
+                            },
+                            {
+                                "type": "postback",
+                                "value": "출발/도착지 수정하기",
+                                "text": "출발/도착지 수정하기"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "message": {
+        "question": {
+            "templates": [
+                {
+                    "type": "text",
+                    "template": {
+                        "message": "위즈코어에서 하우징허브까지 경로입니다."
+                    }
+                },
+                {
+                    "type": "flexible_richbutton",
+                    "template": {
+                        "buttons": [
+                            {
+                                "type": "invoke_button",
+                                "text": "지하철 2",
+                                "buttons": [
+                                    {
+                                        "type": "expand_button",
+                                        "value": "search_type=0&key=2_get_latest_raw_data_1386053411520457&index=5",
+                                        "contents": {
+                                            "payment": 1450,
+                                            "total_time": 64,
+                                            "total_walk_time": 1031,
+                                            "transfer_count": 2,
+                                            "bus_station_count": 0,
+                                            "subway_station_count": 18,
+                                            "total_station_count": 18,
+                                            "total_distance": 19431,
+                                            "route": [
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 1,
+                                                    "subway_name": "수도권 5호선",
+                                                    "subway_code": 5,
+                                                    "start_name": "공덕",
+                                                    "end_name": "여의도"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 1,
+                                                    "subway_name": "수도권 9호선",
+                                                    "subway_code": 9,
+                                                    "start_name": "여의도",
+                                                    "end_name": "종합운동장"
+                                                }
+                                            ]
+                                        },
+                                        "url": "/view/webchat/trans/route/detail",
+                                        "selected": false,
+                                        "extra": null
+                                    },
+                                    {
+                                        "type": "expand_button",
+                                        "value": "search_type=0&key=2_get_latest_raw_data_1386053411520457&index=6",
+                                        "contents": {
+                                            "payment": 1450,
+                                            "total_time": 65,
+                                            "total_walk_time": 1007,
+                                            "transfer_count": 2,
+                                            "bus_station_count": 0,
+                                            "subway_station_count": 19,
+                                            "total_station_count": 19,
+                                            "total_distance": 21207,
+                                            "route": [
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 1,
+                                                    "subway_name": "수도권 5호선",
+                                                    "subway_code": 5,
+                                                    "start_name": "공덕",
+                                                    "end_name": "을지로4가"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 1,
+                                                    "subway_name": "수도권 2호선",
+                                                    "subway_code": 2,
+                                                    "start_name": "을지로4가",
+                                                    "end_name": "잠실새내"
+                                                }
+                                            ]
+                                        },
+                                        "url": "/view/webchat/trans/route/detail",
+                                        "selected": false,
+                                        "extra": null
+                                    }
+                                ],
+                                "selected": false,
+                                "extra": {
+                                    "path_type": 1
+                                }
+                            },
+                            {
+                                "type": "invoke_button",
+                                "text": "버스 10",
+                                "buttons": [
+                                    {
+                                        "type": "expand_button",
+                                        "value": "search_type=0&key=2_get_latest_raw_data_1386053411520457&index=7",
+                                        "contents": {
+                                            "payment": 1400,
+                                            "total_time": 72,
+                                            "total_walk_time": 515,
+                                            "transfer_count": 2,
+                                            "bus_station_count": 36,
+                                            "subway_station_count": 0,
+                                            "total_station_count": 36,
+                                            "total_distance": 19095,
+                                            "route": [
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "261",
+                                                    "bus_type": 11,
+                                                    "start_name": "신덕성결교회",
+                                                    "end_name": "동대문역사문화공원"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "301",
+                                                    "bus_type": 11,
+                                                    "start_name": "동대문역사문화공원",
+                                                    "end_name": "종합운동장사거리"
+                                                }
+                                            ]
+                                        },
+                                        "url": "/view/webchat/trans/route/detail",
+                                        "selected": false,
+                                        "extra": null
+                                    },
+                                    {
+                                        "type": "expand_button",
+                                        "value": "search_type=0&key=2_get_latest_raw_data_1386053411520457&index=8",
+                                        "contents": {
+                                            "payment": 1300,
+                                            "total_time": 65,
+                                            "total_walk_time": 931,
+                                            "transfer_count": 2,
+                                            "bus_station_count": 25,
+                                            "subway_station_count": 0,
+                                            "total_station_count": 25,
+                                            "total_distance": 15657,
+                                            "route": [
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "740",
+                                                    "bus_type": 11,
+                                                    "start_name": "용마루고개.브라운스톤공덕아파트",
+                                                    "end_name": "포스코빌딩"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "333",
+                                                    "bus_type": 11,
+                                                    "start_name": "포스코빌딩",
+                                                    "end_name": "종합운동장사거리"
+                                                }
+                                            ]
+                                        },
+                                        "url": "/view/webchat/trans/route/detail",
+                                        "selected": false,
+                                        "extra": null
+                                    },
+                                    {
+                                        "type": "expand_button",
+                                        "value": "search_type=0&key=2_get_latest_raw_data_1386053411520457&index=9",
+                                        "contents": {
+                                            "payment": 1400,
+                                            "total_time": 65,
+                                            "total_walk_time": 822,
+                                            "transfer_count": 2,
+                                            "bus_station_count": 26,
+                                            "subway_station_count": 0,
+                                            "total_station_count": 26,
+                                            "total_distance": 15915,
+                                            "route": [
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "740",
+                                                    "bus_type": 11,
+                                                    "start_name": "공덕오거리",
+                                                    "end_name": "한서병원"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "360",
+                                                    "bus_type": 11,
+                                                    "start_name": "한서병원",
+                                                    "end_name": "종합운동장사거리"
+                                                }
+                                            ]
+                                        },
+                                        "url": "/view/webchat/trans/route/detail",
+                                        "selected": false,
+                                        "extra": null
+                                    },
+                                    {
+                                        "type": "expand_button",
+                                        "value": "search_type=0&key=2_get_latest_raw_data_1386053411520457&index=10",
+                                        "contents": {
+                                            "payment": 1400,
+                                            "total_time": 67,
+                                            "total_walk_time": 851,
+                                            "transfer_count": 2,
+                                            "bus_station_count": 27,
+                                            "subway_station_count": 0,
+                                            "total_station_count": 27,
+                                            "total_distance": 17014,
+                                            "route": [
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "740",
+                                                    "bus_type": 11,
+                                                    "start_name": "공덕오거리",
+                                                    "end_name": "한국무역센터.삼성역"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "4318",
+                                                    "bus_type": 12,
+                                                    "start_name": "삼성역",
+                                                    "end_name": "아시아선수촌아파트"
+                                                }
+                                            ]
+                                        },
+                                        "url": "/view/webchat/trans/route/detail",
+                                        "selected": false,
+                                        "extra": null
+                                    },
+                                    {
+                                        "type": "expand_button",
+                                        "value": "search_type=0&key=2_get_latest_raw_data_1386053411520457&index=11",
+                                        "contents": {
+                                            "payment": 1400,
+                                            "total_time": 68,
+                                            "total_walk_time": 859,
+                                            "transfer_count": 2,
+                                            "bus_station_count": 29,
+                                            "subway_station_count": 0,
+                                            "total_station_count": 29,
+                                            "total_distance": 16929,
+                                            "route": [
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "740",
+                                                    "bus_type": 11,
+                                                    "start_name": "공덕오거리",
+                                                    "end_name": "롯데칠성"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "340",
+                                                    "bus_type": 11,
+                                                    "start_name": "롯데칠성",
+                                                    "end_name": "아시아선수촌아파트삼거리"
+                                                }
+                                            ]
+                                        },
+                                        "url": "/view/webchat/trans/route/detail",
+                                        "selected": false,
+                                        "extra": null
+                                    },
+                                    {
+                                        "type": "expand_button",
+                                        "value": "search_type=0&key=2_get_latest_raw_data_1386053411520457&index=12",
+                                        "contents": {
+                                            "payment": 1400,
+                                            "total_time": 70,
+                                            "total_walk_time": 959,
+                                            "transfer_count": 2,
+                                            "bus_station_count": 29,
+                                            "subway_station_count": 0,
+                                            "total_station_count": 29,
+                                            "total_distance": 17346,
+                                            "route": [
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "740",
+                                                    "bus_type": 11,
+                                                    "start_name": "공덕오거리",
+                                                    "end_name": "한국무역센터.삼성역"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "3417",
+                                                    "bus_type": 12,
+                                                    "start_name": "삼성역7번출구",
+                                                    "end_name": "아시아선수촌아파트"
+                                                }
+                                            ]
+                                        },
+                                        "url": "/view/webchat/trans/route/detail",
+                                        "selected": false,
+                                        "extra": null
+                                    },
+                                    {
+                                        "type": "expand_button",
+                                        "value": "search_type=0&key=2_get_latest_raw_data_1386053411520457&index=13",
+                                        "contents": {
+                                            "payment": 1400,
+                                            "total_time": 71,
+                                            "total_walk_time": 822,
+                                            "transfer_count": 2,
+                                            "bus_station_count": 30,
+                                            "subway_station_count": 0,
+                                            "total_station_count": 30,
+                                            "total_distance": 18385,
+                                            "route": [
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "740",
+                                                    "bus_type": 11,
+                                                    "start_name": "공덕오거리",
+                                                    "end_name": "한국무역센터.삼성역"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "3411",
+                                                    "bus_type": 12,
+                                                    "start_name": "한국무역센터.삼성역",
+                                                    "end_name": "종합운동장사거리"
+                                                }
+                                            ]
+                                        },
+                                        "url": "/view/webchat/trans/route/detail",
+                                        "selected": false,
+                                        "extra": null
+                                    },
+                                    {
+                                        "type": "expand_button",
+                                        "value": "search_type=0&key=2_get_latest_raw_data_1386053411520457&index=14",
+                                        "contents": {
+                                            "payment": 1400,
+                                            "total_time": 77,
+                                            "total_walk_time": 671,
+                                            "transfer_count": 2,
+                                            "bus_station_count": 38,
+                                            "subway_station_count": 0,
+                                            "total_station_count": 38,
+                                            "total_distance": 20249,
+                                            "route": [
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "400",
+                                                    "bus_type": 11,
+                                                    "start_name": "대한노인회",
+                                                    "end_name": "지하철2호선강남역"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "360",
+                                                    "bus_type": 11,
+                                                    "start_name": "지하철2호선강남역",
+                                                    "end_name": "종합운동장사거리"
+                                                }
+                                            ]
+                                        },
+                                        "url": "/view/webchat/trans/route/detail",
+                                        "selected": false,
+                                        "extra": null
+                                    },
+                                    {
+                                        "type": "expand_button",
+                                        "value": "search_type=0&key=2_get_latest_raw_data_1386053411520457&index=15",
+                                        "contents": {
+                                            "payment": 1400,
+                                            "total_time": 78,
+                                            "total_walk_time": 1078,
+                                            "transfer_count": 2,
+                                            "bus_station_count": 32,
+                                            "subway_station_count": 0,
+                                            "total_station_count": 32,
+                                            "total_distance": 19721,
+                                            "route": [
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "740",
+                                                    "bus_type": 11,
+                                                    "start_name": "용마루고개.브라운스톤공덕아파트",
+                                                    "end_name": "포스코건너편"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "2415",
+                                                    "bus_type": 12,
+                                                    "start_name": "포스코사거리",
+                                                    "end_name": "종합운동장사거리"
+                                                }
+                                            ]
+                                        },
+                                        "url": "/view/webchat/trans/route/detail",
+                                        "selected": false,
+                                        "extra": null
+                                    },
+                                    {
+                                        "type": "expand_button",
+                                        "value": "search_type=0&key=2_get_latest_raw_data_1386053411520457&index=16",
+                                        "contents": {
+                                            "payment": 2400,
+                                            "total_time": 65,
+                                            "total_walk_time": 965,
+                                            "transfer_count": 2,
+                                            "bus_station_count": 24,
+                                            "subway_station_count": 0,
+                                            "total_station_count": 24,
+                                            "total_distance": 16135,
+                                            "route": [
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "740",
+                                                    "bus_type": 11,
+                                                    "start_name": "용마루고개.브라운스톤공덕아파트",
+                                                    "end_name": "역삼역.포스코P&S타워"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "9303",
+                                                    "bus_type": 4,
+                                                    "start_name": "역삼역.포스코P&S타워",
+                                                    "end_name": "잠실새내역4번출구"
+                                                }
+                                            ]
+                                        },
+                                        "url": "/view/webchat/trans/route/detail",
+                                        "selected": false,
+                                        "extra": null
+                                    }
+                                ],
+                                "selected": false,
+                                "extra": {
+                                    "path_type": 2
+                                }
+                            },
+                            {
+                                "type": "invoke_button",
+                                "text": "지하철+버스 5",
+                                "buttons": [
+                                    {
+                                        "type": "expand_button",
+                                        "value": "search_type=0&key=2_get_latest_raw_data_1386053411520457&index=0",
+                                        "contents": {
+                                            "payment": 1450,
+                                            "total_time": 61,
+                                            "total_walk_time": 990,
+                                            "transfer_count": 2,
+                                            "bus_station_count": 14,
+                                            "subway_station_count": 6,
+                                            "total_station_count": 20,
+                                            "total_distance": 16755,
+                                            "route": [
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "740",
+                                                    "bus_type": 11,
+                                                    "start_name": "공덕오거리",
+                                                    "end_name": "지하철2호선교대역2"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 1,
+                                                    "subway_name": "수도권 2호선",
+                                                    "subway_code": 2,
+                                                    "start_name": "교대",
+                                                    "end_name": "잠실새내"
+                                                }
+                                            ]
+                                        },
+                                        "url": "/view/webchat/trans/route/detail",
+                                        "selected": false,
+                                        "extra": null
+                                    },
+                                    {
+                                        "type": "expand_button",
+                                        "value": "search_type=0&key=2_get_latest_raw_data_1386053411520457&index=1",
+                                        "contents": {
+                                            "payment": 1450,
+                                            "total_time": 61,
+                                            "total_walk_time": 816,
+                                            "transfer_count": 2,
+                                            "bus_station_count": 4,
+                                            "subway_station_count": 17,
+                                            "total_station_count": 21,
+                                            "total_distance": 20072,
+                                            "route": [
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "7013A",
+                                                    "bus_type": 12,
+                                                    "start_name": "아현동주민센터",
+                                                    "end_name": "종근당.충정로역"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 1,
+                                                    "subway_name": "수도권 2호선",
+                                                    "subway_code": 2,
+                                                    "start_name": "충정로",
+                                                    "end_name": "잠실새내"
+                                                }
+                                            ]
+                                        },
+                                        "url": "/view/webchat/trans/route/detail",
+                                        "selected": false,
+                                        "extra": null
+                                    },
+                                    {
+                                        "type": "expand_button",
+                                        "value": "search_type=0&key=2_get_latest_raw_data_1386053411520457&index=2",
+                                        "contents": {
+                                            "payment": 1450,
+                                            "total_time": 61,
+                                            "total_walk_time": 588,
+                                            "transfer_count": 2,
+                                            "bus_station_count": 11,
+                                            "subway_station_count": 14,
+                                            "total_station_count": 25,
+                                            "total_distance": 20524,
+                                            "route": [
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "261",
+                                                    "bus_type": 11,
+                                                    "start_name": "신덕성결교회",
+                                                    "end_name": "을지로3가"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 1,
+                                                    "subway_name": "수도권 2호선",
+                                                    "subway_code": 2,
+                                                    "start_name": "을지로3가",
+                                                    "end_name": "잠실새내"
+                                                }
+                                            ]
+                                        },
+                                        "url": "/view/webchat/trans/route/detail",
+                                        "selected": false,
+                                        "extra": null
+                                    },
+                                    {
+                                        "type": "expand_button",
+                                        "value": "search_type=0&key=2_get_latest_raw_data_1386053411520457&index=3",
+                                        "contents": {
+                                            "payment": 1450,
+                                            "total_time": 62,
+                                            "total_walk_time": 875,
+                                            "transfer_count": 2,
+                                            "bus_station_count": 3,
+                                            "subway_station_count": 18,
+                                            "total_station_count": 21,
+                                            "total_distance": 20199,
+                                            "route": [
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "마포03",
+                                                    "bus_type": 3,
+                                                    "start_name": "서부지원",
+                                                    "end_name": "아현전철역"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 1,
+                                                    "subway_name": "수도권 2호선",
+                                                    "subway_code": 2,
+                                                    "start_name": "아현",
+                                                    "end_name": "잠실새내"
+                                                }
+                                            ]
+                                        },
+                                        "url": "/view/webchat/trans/route/detail",
+                                        "selected": false,
+                                        "extra": null
+                                    },
+                                    {
+                                        "type": "expand_button",
+                                        "value": "search_type=0&key=2_get_latest_raw_data_1386053411520457&index=4",
+                                        "contents": {
+                                            "payment": 1450,
+                                            "total_time": 63,
+                                            "total_walk_time": 761,
+                                            "transfer_count": 2,
+                                            "bus_station_count": 9,
+                                            "subway_station_count": 15,
+                                            "total_station_count": 24,
+                                            "total_distance": 21006,
+                                            "route": [
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "173",
+                                                    "bus_type": 11,
+                                                    "start_name": "신덕성결교회",
+                                                    "end_name": "우리은행종로지점"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 1,
+                                                    "subway_name": "수도권 2호선",
+                                                    "subway_code": 2,
+                                                    "start_name": "을지로입구",
+                                                    "end_name": "잠실새내"
+                                                }
+                                            ]
+                                        },
+                                        "url": "/view/webchat/trans/route/detail",
+                                        "selected": false,
+                                        "extra": null
+                                    }
+                                ],
+                                "selected": false,
+                                "extra": {
+                                    "path_type": 3
+                                }
+                            }
+                        ],
+                        "extra": {
+                            "start": {
+                                "lng": "126.9559296",
+                                "lat": "37.5458687",
+                                "name": "위즈코어",
+                                "position_name": "위즈코어"
+                            },
+                            "end": {
+                                "lng": "127.0812891",
+                                "lat": "37.5083711",
+                                "name": "하우징허브",
+                                "position_name": "하우징허브"
+                            },
+                            "searchType": 0,
+                            "recommend": {
+                                "time": {
+                                    "buttons": [
+                                        {
+                                            "type": "expand_button",
+                                            "value": "search_type=0&key=2_get_latest_raw_data_1386053411520457&index=2",
+                                            "contents": {
+                                                "payment": 1450,
+                                                "total_time": 61,
+                                                "total_walk_time": 588,
+                                                "transfer_count": 2,
+                                                "bus_station_count": 11,
+                                                "subway_station_count": 14,
+                                                "total_station_count": 25,
+                                                "total_distance": 20524,
+                                                "route": [
+                                                    {
+                                                        "search_type": 0,
+                                                        "traffic_type": 2,
+                                                        "bus_no": "261",
+                                                        "bus_type": 11,
+                                                        "start_name": "신덕성결교회",
+                                                        "end_name": "을지로3가"
+                                                    },
+                                                    {
+                                                        "search_type": 0,
+                                                        "traffic_type": 1,
+                                                        "subway_name": "수도권 2호선",
+                                                        "subway_code": 2,
+                                                        "start_name": "을지로3가",
+                                                        "end_name": "잠실새내"
+                                                    }
+                                                ]
+                                            },
+                                            "url": "/view/webchat/trans/route/detail",
+                                            "selected": false,
+                                            "extra": null
+                                        }
+                                    ]
+                                },
+                                "payment": {
+                                    "buttons": [
+                                        {
+                                            "type": "expand_button",
+                                            "value": "search_type=0&key=2_get_latest_raw_data_1386053411520457&index=8",
+                                            "contents": {
+                                                "payment": 1300,
+                                                "total_time": 65,
+                                                "total_walk_time": 931,
+                                                "transfer_count": 2,
+                                                "bus_station_count": 25,
+                                                "subway_station_count": 0,
+                                                "total_station_count": 25,
+                                                "total_distance": 15657,
+                                                "route": [
+                                                    {
+                                                        "search_type": 0,
+                                                        "traffic_type": 2,
+                                                        "bus_no": "740",
+                                                        "bus_type": 11,
+                                                        "start_name": "용마루고개.브라운스톤공덕아파트",
+                                                        "end_name": "포스코빌딩"
+                                                    },
+                                                    {
+                                                        "search_type": 0,
+                                                        "traffic_type": 2,
+                                                        "bus_no": "333",
+                                                        "bus_type": 11,
+                                                        "start_name": "포스코빌딩",
+                                                        "end_name": "종합운동장사거리"
+                                                    }
+                                                ]
+                                            },
+                                            "url": "/view/webchat/trans/route/detail",
+                                            "selected": false,
+                                            "extra": null
+                                        }
+                                    ]
+                                },
+                                "transfer": {
+                                    "buttons": [
+                                        {
+                                            "type": "expand_button",
+                                            "value": "search_type=0&key=2_get_latest_raw_data_1386053411520457&index=16",
+                                            "contents": {
+                                                "payment": 2400,
+                                                "total_time": 65,
+                                                "total_walk_time": 965,
+                                                "transfer_count": 2,
+                                                "bus_station_count": 24,
+                                                "subway_station_count": 0,
+                                                "total_station_count": 24,
+                                                "total_distance": 16135,
+                                                "route": [
+                                                    {
+                                                        "search_type": 0,
+                                                        "traffic_type": 2,
+                                                        "bus_no": "740",
+                                                        "bus_type": 11,
+                                                        "start_name": "용마루고개.브라운스톤공덕아파트",
+                                                        "end_name": "역삼역.포스코P&S타워"
+                                                    },
+                                                    {
+                                                        "search_type": 0,
+                                                        "traffic_type": 2,
+                                                        "bus_no": "9303",
+                                                        "bus_type": 4,
+                                                        "start_name": "역삼역.포스코P&S타워",
+                                                        "end_name": "잠실새내역4번출구"
+                                                    }
+                                                ]
+                                            },
+                                            "url": "/view/webchat/trans/route/detail",
+                                            "selected": false,
+                                            "extra": null
+                                        }
+                                    ]
+                                }
+                            },
+                            "favorite": null,
+                            "filter": {
+                                "sortType": [
+                                    {
+                                        "no": 0,
+                                        "name": "최단시간",
+                                        "command": null,
+                                        "priority": 1,
+                                        "selected": true
+                                    },
+                                    {
+                                        "no": 1,
+                                        "name": "최저요금",
+                                        "command": null,
+                                        "priority": 2,
+                                        "selected": false
+                                    },
+                                    {
+                                        "no": 2,
+                                        "name": "최소환승",
+                                        "command": null,
+                                        "priority": 3,
+                                        "selected": false
+                                    }
+                                ],
+                                "searchType": [
+                                    {
+                                        "no": 0,
+                                        "name": "시내교통",
+                                        "command": null,
+                                        "priority": 1,
+                                        "selected": true
+                                    }
+                                ]
+                            },
+                            "other_route": {
+                                "buttons": null
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "id": "교통_경로_검색"
+}

@@ -1,0 +1,243 @@
+{
+    "version": "1.1.0",
+    "type": "interactive",
+    "service_type": 3,
+    "sequence": 1534918186164273,
+    "timestamp": 1534918186,
+    "source": {
+        "type": 3,
+        "userid": "Uff2ad4af513235b82e10256e30eddce7"
+    },
+    "user_area": {
+        "templates": [
+            {
+                "text": "출발역",
+                "value": ""
+            },
+            {
+                "text": "도착역",
+                "value": ""
+            },
+            {
+                "text": "가는날",
+                "value": ""
+            },
+            {
+                "text": "탑승인원",
+                "value": ""
+            }
+        ]
+    },
+    "input_area": {
+        "slide_info": {
+            "status": {
+                "slide_on": true
+            },
+            "title": {
+                "default": "여기를 위로 올려주세요."
+            }
+        },
+        "home": {
+            "type": "postback",
+            "value": "메뉴_홈",
+            "text": "홈"
+        },
+        "submit": {
+            "type": "postback",
+            "value": "기차_열차_조회",
+            "text": "티켓조회"
+        },
+        "layers": {
+            "type": "tab_layer",
+            "template": [
+                {
+                    "subtitle": "출발역",
+                    "title": "출발역을 선택해 주세요.",
+                    "type": "richbutton",
+                    "template": {
+                        "extra": {},
+                        "buttons": [
+                            {
+                                "type": "auto_input_button",
+                                "value": "기차_출발역",
+                                "text": "직접입력",
+                                "url": "/view/webchat/train/auto/station"
+                            },
+                            {
+                                "type": "invoke_button",
+                                "text": "가까운역",
+                                "buttons": [
+                                    {
+                                        "type": "postback",
+                                        "value": "서울역",
+                                        "text": "서울역"
+                                    },
+                                    {
+                                        "type": "postback",
+                                        "value": "대전역",
+                                        "text": "대전역"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "invoke_button",
+                                "text": "주요역",
+                                "buttons": [
+                                    {
+                                        "type": "postback",
+                                        "value": "서울역",
+                                        "text": "서울역"
+                                    },
+                                    {
+                                        "type": "postback",
+                                        "value": "대전역",
+                                        "text": "대전역"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "subtitle": "도착역",
+                    "title": "도착역을 선택해 주세요.",
+                    "type": "richbutton",
+                    "template": {
+                        "extra": {},
+                        "buttons": [
+                            {
+                                "type": "auto_input_button",
+                                "value": "기차_도착역",
+                                "text": "직접입력",
+                                "url": "/view/webchat/train/auto/station"
+                            },
+                            {
+                                "type": "invoke_button",
+                                "text": "가까운역",
+                                "buttons": [
+                                    {
+                                        "type": "postback",
+                                        "value": "서울역",
+                                        "text": "서울역"
+                                    },
+                                    {
+                                        "type": "postback",
+                                        "value": "대전역",
+                                        "text": "대전역"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "invoke_button",
+                                "text": "주요역",
+                                "buttons": [
+                                    {
+                                        "type": "postback",
+                                        "value": "서울역",
+                                        "text": "서울역"
+                                    },
+                                    {
+                                        "type": "postback",
+                                        "value": "대전역",
+                                        "text": "대전역"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "title": "가는날을 선택해 주세요.",
+                    "subtitle": "가는날",
+                    "type": "schedule",
+                    "template": {
+                        "value": "기차_출발일시",
+                        "schedule": [
+                            {
+                                "date": "06-29",
+                                "isRun": true
+                            },
+                            {
+                                "date": "06-30",
+                                "isRun": true
+                            },
+                            {
+                                "date": "07-01",
+                                "isRun": true
+                            },
+                            {
+                                "date": "07-02",
+                                "isRun": true
+                            },
+                            {
+                                "date": "07-03",
+                                "isRun": true
+                            }
+                        ],
+                        "timestamp": 1530255406
+                    }
+                },
+                {
+                    "subtitle": "탑승인원",
+                    "title": "탑승인원을 선택해주세요.",
+                    "type": "counter",
+                    "template": {
+                        "text": "확인",
+                        "value": "기차_승객",
+                        "lists": [
+                            {
+                                "type": 1,
+                                "text": "어른 (만 13세이상)",
+                                "priority": 1,
+                                "counter": 1
+                            },
+                            {
+                                "type": 3,
+                                "text": "어린이 (만 4-12세)",
+                                "priority": 2,
+                                "counter": 0
+                            },
+                            {
+                                "type": 2,
+                                "text": "유아 (4세 미만)",
+                                "priority": 3,
+                                "counter": 0
+                            },
+                            {
+                                "type": 7,
+                                "text": "경로 (만 65세 이상)",
+                                "priority": 4,
+                                "counter": 0
+                            },
+                            {
+                                "type": 5,
+                                "text": "장애 (1-3급)",
+                                "priority": 5,
+                                "counter": 0
+                            },
+                            {
+                                "type": 6,
+                                "text": "장애 (4-6급)",
+                                "priority": 6,
+                                "counter": 0
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "message": {
+        "question": {
+            "templates": [
+                {
+                    "type": "text",
+                    "template": {
+                        "message": "기차표 예매를 선택하셨습니다.<br>여정정보를 알려주세요."
+                    }
+                }
+            ]
+        }
+    },
+    "id": "기차_여정_선택"
+}

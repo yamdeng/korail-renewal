@@ -2,13 +2,24 @@
     "version": "1.1.0",
     "type": "interactive",
     "service_type": 3,
-    "sequence": 1534918186164273,
-    "timestamp": 1534918186,
+    "sequence": 1530249832495344,
+    "timestamp": 1530249832,
     "source": {
-        "type": 3,
-        "userid": "Uff2ad4af513235b82e10256e30eddce7"
+        "type": 2,
+        "userid": "1386053411520457"
     },
-    "user_area": null,
+    "user_area": {
+        "templates": [
+            {
+                "text": "출발지",
+                "value": null
+            },
+            {
+                "text": "도착지",
+                "value": null
+            }
+        ]
+    },
     "input_area": {
         "slide_info": {
             "status": {
@@ -23,30 +34,27 @@
             "value": "메뉴_홈",
             "text": "홈"
         },
-        "submit": null,
+        "submit": {
+            "type": "postback",
+            "value": "경로_검색",
+            "text": "확인"
+        },
         "templates": {
             "type": "layer",
             "template": [
                 {
+                    "title": "즐겨찾기 경로를 선택해 주세요.",
                     "subtitle": null,
-                    "title": "검색 방법을 선택해 주세요.",
-                    "type": "richbutton",
+                    "type": "list",
                     "template": {
                         "buttons": [
                             {
-                                "type": "postback",
-                                "value": "교통_시작",
-                                "text": "출발지/도착지 경로검색"
+                                "value": "~~",
+                                "text": "양재역->동대문역"
                             },
                             {
-                                "type": "postback",
-                                "value": "즐겨찾기 경로",
-                                "text": "즐겨찾기 경로"
-                            },
-                            {
-                                "type": "postback",
-                                "value": "최근검색 경로",
-                                "text": "최근검색 경로"
+                                "value": "~~",
+                                "text": "어부동상회->대보초등학교"
                             }
                         ]
                     }
@@ -60,11 +68,11 @@
                 {
                     "type": "text",
                     "template": {
-                        "message": "통합교통 경로검색 서비스를 시작합니다."
+                        "message": "즐겨찾기 경로를 선택해 주세요."
                     }
                 }
             ]
         }
     },
-    "id": "교통_처음"
+    "id": "교통_즐겨찾기"
 }
