@@ -6,7 +6,12 @@ const fs = require('fs');
 
 router.post('/requestMessage', function(req, res) {
     const query = req.body.message.template.query;
-    const jsonFileName = query;
+    let jsonFileName = query;
+    if(query === '/trans/auto/keyword') {
+        jsonFileName = '1차검색';
+    } else if(query === '/trans/search/address') {
+        jsonFileName = '2차검색';
+    }    
     let jsonString = fs.readFileSync(
         __dirname + '/json/' + jsonFileName + '.json',
         'utf8'
