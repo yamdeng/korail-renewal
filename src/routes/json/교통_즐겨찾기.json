@@ -1,26 +1,48 @@
 {
     "version": "1.1.0",
-    "type": "interactive",
+    "type": "message",
     "service_type": 3,
-    "sequence": 1530249832495344,
-    "timestamp": 1530249832,
+    "sequence": 1535959299157750,
+    "timestamp": 1535959299,
     "source": {
-        "type": 2,
-        "userid": "1386053411520457"
+        "type": 3,
+        "userid": "Uff2ad4af513235b82e10256e30eddce7"
     },
-    "user_area": {
+    "message": {
         "templates": [
             {
-                "text": "출발지",
+                "type": "text",
+                "template": {
+                    "message": "즐겨찾기 경로를 선택해 주세요."
+                }
+            }
+        ],
+        "toast": null
+    },
+    "id": "교통_즐겨찾기",
+    "user_area": {
+        "type": "default",
+        "template": [
+            {
+                "field": "출발지",
+                "text": null,
                 "value": null
             },
             {
-                "text": "도착지",
+                "field": "도착지",
+                "text": null,
                 "value": null
             }
         ]
     },
     "input_area": {
+        "home": {
+            "type": "postback",
+            "template": {
+                "query": "메인_메뉴",
+                "args": null
+            }
+        },
         "slide_info": {
             "status": {
                 "slide_on": true
@@ -29,15 +51,12 @@
                 "default": "여기를 위로 올려주세요."
             }
         },
-        "home": {
-            "type": "postback",
-            "value": "메뉴_홈",
-            "text": "홈"
-        },
         "submit": {
             "type": "postback",
-            "value": "경로_검색",
-            "text": "확인"
+            "template": {
+                "query": "교통_경로_검색",
+                "args": null
+            }
         },
         "templates": {
             "type": "layer",
@@ -45,34 +64,397 @@
                 {
                     "title": "즐겨찾기 경로를 선택해 주세요.",
                     "subtitle": null,
-                    "type": "list",
-                    "template": {
-                        "buttons": [
-                            {
-                                "value": "~~",
-                                "text": "양재역->동대문역"
-                            },
-                            {
-                                "value": "~~",
-                                "text": "어부동상회->대보초등학교"
+                    "templates": [
+                        {
+                            "type": "list",
+                            "template": {
+                                "lists": [
+                                    {
+                                        "type": "tag_ex_button",
+                                        "text": "공덕코어->디비코",
+                                        "value": [
+                                            {
+                                                "field": "출발지",
+                                                "text": "공덕코어",
+                                                "value": {
+                                                    "name": "공덕코어",
+                                                    "position_name": "공덕코어",
+                                                    "lng": "126.9559517",
+                                                    "lat": "37.545905"
+                                                }
+                                            },
+                                            {
+                                                "field": "도착지",
+                                                "text": "디비코",
+                                                "value": {
+                                                    "name": "디비코",
+                                                    "position_name": "디비코",
+                                                    "lng": "127.1093327",
+                                                    "lat": "37.3351291"
+                                                }
+                                            }
+                                        ],
+                                        "action": {
+                                            "del": {
+                                                "type": "restful",
+                                                "template": {
+                                                    "method": "delete",
+                                                    "query": "/trans/favorite",
+                                                    "args": {
+                                                        "key": "Uff2ad4af513235b82e10256e30eddce7_3_1_1535958124253223"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "tag_ex_button",
+                                        "text": "공덕코어->디비코",
+                                        "value": [
+                                            {
+                                                "field": "출발지",
+                                                "text": "공덕코어",
+                                                "value": {
+                                                    "name": "공덕코어",
+                                                    "position_name": "공덕코어",
+                                                    "lng": "126.9559517",
+                                                    "lat": "37.545905"
+                                                }
+                                            },
+                                            {
+                                                "field": "도착지",
+                                                "text": "디비코",
+                                                "value": {
+                                                    "name": "디비코",
+                                                    "position_name": "디비코",
+                                                    "lng": "127.1093327",
+                                                    "lat": "37.3351291"
+                                                }
+                                            }
+                                        ],
+                                        "action": {
+                                            "del": {
+                                                "type": "restful",
+                                                "template": {
+                                                    "method": "delete",
+                                                    "query": "/trans/favorite",
+                                                    "args": {
+                                                        "key": "Uff2ad4af513235b82e10256e30eddce7_3_1_1535957980145942"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "tag_ex_button",
+                                        "text": "공덕코어->디비코",
+                                        "value": [
+                                            {
+                                                "field": "출발지",
+                                                "text": "공덕코어",
+                                                "value": {
+                                                    "name": "공덕코어",
+                                                    "position_name": "공덕코어",
+                                                    "lng": "126.9559517",
+                                                    "lat": "37.545905"
+                                                }
+                                            },
+                                            {
+                                                "field": "도착지",
+                                                "text": "디비코",
+                                                "value": {
+                                                    "name": "디비코",
+                                                    "position_name": "디비코",
+                                                    "lng": "127.1093327",
+                                                    "lat": "37.3351291"
+                                                }
+                                            }
+                                        ],
+                                        "action": {
+                                            "del": {
+                                                "type": "restful",
+                                                "template": {
+                                                    "method": "delete",
+                                                    "query": "/trans/favorite",
+                                                    "args": {
+                                                        "key": "Uff2ad4af513235b82e10256e30eddce7_3_1_1535957966921648"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "tag_ex_button",
+                                        "text": "공덕코어->디비코",
+                                        "value": [
+                                            {
+                                                "field": "출발지",
+                                                "text": "공덕코어",
+                                                "value": {
+                                                    "name": "공덕코어",
+                                                    "position_name": "공덕코어",
+                                                    "lng": "126.9559517",
+                                                    "lat": "37.545905"
+                                                }
+                                            },
+                                            {
+                                                "field": "도착지",
+                                                "text": "디비코",
+                                                "value": {
+                                                    "name": "디비코",
+                                                    "position_name": "디비코",
+                                                    "lng": "127.1093327",
+                                                    "lat": "37.3351291"
+                                                }
+                                            }
+                                        ],
+                                        "action": {
+                                            "del": {
+                                                "type": "restful",
+                                                "template": {
+                                                    "method": "delete",
+                                                    "query": "/trans/favorite",
+                                                    "args": {
+                                                        "key": "Uff2ad4af513235b82e10256e30eddce7_3_1_1535957958473275"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "tag_ex_button",
+                                        "text": "쌈지길->한미협회",
+                                        "value": [
+                                            {
+                                                "field": "출발지",
+                                                "text": "쌈지길",
+                                                "value": {
+                                                    "name": "쌈지길",
+                                                    "position_name": "쌈지길",
+                                                    "lng": "126.9849565",
+                                                    "lat": "37.5742611"
+                                                }
+                                            },
+                                            {
+                                                "field": "도착지",
+                                                "text": "한미협회",
+                                                "value": {
+                                                    "name": "한미협회",
+                                                    "position_name": "한미협회",
+                                                    "lng": "126.9818453",
+                                                    "lat": "37.5724503"
+                                                }
+                                            }
+                                        ],
+                                        "action": {
+                                            "del": {
+                                                "type": "restful",
+                                                "template": {
+                                                    "method": "delete",
+                                                    "query": "/trans/favorite",
+                                                    "args": {
+                                                        "key": "Uff2ad4af513235b82e10256e30eddce7_3_1_1535458684191087"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "tag_ex_button",
+                                        "text": "쌈지길->한미협회",
+                                        "value": [
+                                            {
+                                                "field": "출발지",
+                                                "text": "쌈지길",
+                                                "value": {
+                                                    "name": "쌈지길",
+                                                    "position_name": "쌈지길",
+                                                    "lng": "126.9849565",
+                                                    "lat": "37.5742611"
+                                                }
+                                            },
+                                            {
+                                                "field": "도착지",
+                                                "text": "한미협회",
+                                                "value": {
+                                                    "name": "한미협회",
+                                                    "position_name": "한미협회",
+                                                    "lng": "126.9818453",
+                                                    "lat": "37.5724503"
+                                                }
+                                            }
+                                        ],
+                                        "action": {
+                                            "del": {
+                                                "type": "restful",
+                                                "template": {
+                                                    "method": "delete",
+                                                    "query": "/trans/favorite",
+                                                    "args": {
+                                                        "key": "Uff2ad4af513235b82e10256e30eddce7_3_1_1535457122666109"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "tag_ex_button",
+                                        "text": "쌈지길->한미협회",
+                                        "value": [
+                                            {
+                                                "field": "출발지",
+                                                "text": "쌈지길",
+                                                "value": {
+                                                    "name": "쌈지길",
+                                                    "position_name": "쌈지길",
+                                                    "lng": "126.9849565",
+                                                    "lat": "37.5742611"
+                                                }
+                                            },
+                                            {
+                                                "field": "도착지",
+                                                "text": "한미협회",
+                                                "value": {
+                                                    "name": "한미협회",
+                                                    "position_name": "한미협회",
+                                                    "lng": "126.9818453",
+                                                    "lat": "37.5724503"
+                                                }
+                                            }
+                                        ],
+                                        "action": {
+                                            "del": {
+                                                "type": "restful",
+                                                "template": {
+                                                    "method": "delete",
+                                                    "query": "/trans/favorite",
+                                                    "args": {
+                                                        "key": "Uff2ad4af513235b82e10256e30eddce7_3_1_1535456860638025"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "tag_ex_button",
+                                        "text": "쌈지길->한미협회",
+                                        "value": [
+                                            {
+                                                "field": "출발지",
+                                                "text": "쌈지길",
+                                                "value": {
+                                                    "name": "쌈지길",
+                                                    "position_name": "쌈지길",
+                                                    "lng": "126.9849565",
+                                                    "lat": "37.5742611"
+                                                }
+                                            },
+                                            {
+                                                "field": "도착지",
+                                                "text": "한미협회",
+                                                "value": {
+                                                    "name": "한미협회",
+                                                    "position_name": "한미협회",
+                                                    "lng": "126.9818453",
+                                                    "lat": "37.5724503"
+                                                }
+                                            }
+                                        ],
+                                        "action": {
+                                            "del": {
+                                                "type": "restful",
+                                                "template": {
+                                                    "method": "delete",
+                                                    "query": "/trans/favorite",
+                                                    "args": {
+                                                        "key": "Uff2ad4af513235b82e10256e30eddce7_3_1_1535455219528464"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "tag_ex_button",
+                                        "text": "쌈지길->한미협회",
+                                        "value": [
+                                            {
+                                                "field": "출발지",
+                                                "text": "쌈지길",
+                                                "value": {
+                                                    "name": "쌈지길",
+                                                    "position_name": "쌈지길",
+                                                    "lng": "126.9849565",
+                                                    "lat": "37.5742611"
+                                                }
+                                            },
+                                            {
+                                                "field": "도착지",
+                                                "text": "한미협회",
+                                                "value": {
+                                                    "name": "한미협회",
+                                                    "position_name": "한미협회",
+                                                    "lng": "126.9818453",
+                                                    "lat": "37.5724503"
+                                                }
+                                            }
+                                        ],
+                                        "action": {
+                                            "del": {
+                                                "type": "restful",
+                                                "template": {
+                                                    "method": "delete",
+                                                    "query": "/trans/favorite",
+                                                    "args": {
+                                                        "key": "Uff2ad4af513235b82e10256e30eddce7_3_1_1535454691039162"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "tag_ex_button",
+                                        "text": "공덕코어->디비코",
+                                        "value": [
+                                            {
+                                                "field": "출발지",
+                                                "text": "공덕코어",
+                                                "value": {
+                                                    "name": "공덕코어",
+                                                    "position_name": "공덕코어",
+                                                    "lng": "126.9559517",
+                                                    "lat": "37.545905"
+                                                }
+                                            },
+                                            {
+                                                "field": "도착지",
+                                                "text": "디비코",
+                                                "value": {
+                                                    "name": "디비코",
+                                                    "position_name": "디비코",
+                                                    "lng": "127.1093327",
+                                                    "lat": "37.3351291"
+                                                }
+                                            }
+                                        ],
+                                        "action": {
+                                            "del": {
+                                                "type": "restful",
+                                                "template": {
+                                                    "method": "delete",
+                                                    "query": "/trans/favorite",
+                                                    "args": {
+                                                        "key": "Uff2ad4af513235b82e10256e30eddce7_3_1_1535362629498748"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
                             }
-                        ]
-                    }
+                        }
+                    ]
                 }
             ]
         }
-    },
-    "message": {
-        "question": {
-            "templates": [
-                {
-                    "type": "text",
-                    "template": {
-                        "message": "즐겨찾기 경로를 선택해 주세요."
-                    }
-                }
-            ]
-        }
-    },
-    "id": "교통_즐겨찾기"
+    }
 }

@@ -13,7 +13,7 @@
             {
                 "type": "text",
                 "template": {
-                    "message": "공덕코어에서 디비코까지 경로입니다."
+                    "message": "공덕코어에서 디비코까지 경로입니다.-2"
                 }
             },
             {
@@ -22,7 +22,7 @@
                     "buttons": [
                         {
                             "type": "invoke_button",
-                            "text": "지하철 4",
+                            "text": "지하철 4-1",
                             "buttons": [
                                 {
                                     "type": "expand_button",
@@ -42,8 +42,8 @@
                                                 "traffic_type": 1,
                                                 "subway_name": "수도권 6호선",
                                                 "subway_code": 6,
-                                                "start_name": "공덕",
-                                                "end_name": "삼각지"
+                                                "start_name": "공덕123",
+                                                "end_name": "삼각지123"
                                             },
                                             {
                                                 "search_type": 0,
