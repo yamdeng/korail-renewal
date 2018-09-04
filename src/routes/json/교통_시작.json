@@ -56,7 +56,8 @@
             "template": {
                 "query": "교통_경로_검색",
                 "args": null
-            }
+            },
+            "text": "검색"
         },
         "templates": {
             "type": "tab_layer",
@@ -68,6 +69,7 @@
                         {
                             "type": "tag_list",
                             "template": {
+                                "text": "최근검색",
                                 "lists": [
                                     {
                                         "type": "tag_ex_button",
@@ -476,6 +478,7 @@
                     "templates": [
                         {
                             "type": "tag_list",
+                            "text": "최근검색",
                             "template": {
                                 "lists": [
                                     {

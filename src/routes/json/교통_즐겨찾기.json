@@ -56,7 +56,8 @@
             "template": {
                 "query": "교통_경로_검색",
                 "args": null
-            }
+            },
+            "text": "검색"
         },
         "templates": {
             "type": "layer",
