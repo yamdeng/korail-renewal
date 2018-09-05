@@ -53,7 +53,7 @@
         },
         "submit": {
             "type": "postback",
-            "template": {
+            "value": {
                 "query": "교통_경로_검색",
                 "args": null
             },
