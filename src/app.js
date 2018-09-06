@@ -24,7 +24,7 @@ app.use(compress())
 
 app.use(loggerMiddleware);
 app.use(CONFIG.API_PREFIX_URL + '/application', applicationRoute);
-app.use(CONFIG.API_PREFIX_URL + '/korail', korailRoute);
+app.use(CONFIG.API_PREFIX_URL + '/chatbot', korailRoute);
 
 app.use(errorMiddleware.notFoundHandler)
     .use(errorMiddleware.errorLogger)

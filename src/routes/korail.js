@@ -4,7 +4,7 @@ const router = express.Router();
 const fs = require('fs');
 // const logger = require('../utils/logger');
 
-router.post('/requestMessage', function(req, res) {
+router.post('/v1/webchat', function(req, res) {
     const query = req.body.message.template.query;
     let jsonFileName = query;
     if(query === '/trans/auto/keyword') {
