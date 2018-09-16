@@ -2,18 +2,18 @@
     "version": "1.1.0",
     "type": "message",
     "service_type": 0,
-    "sequence": 1535959059891955,
-    "timestamp": 1535959059,
+    "sequence": 1536789414161328,
+    "timestamp": 1536789414,
     "source": {
-        "type": 3,
-        "userid": "Uff2ad4af513235b82e10256e30eddce7"
+        "type": 2,
+        "userid": "1838511392917687"
     },
     "message": {
         "templates": [
             {
                 "type": "text",
                 "template": {
-                    "message": "안녕하세요.<br>스마트교통 플랫폼입니다.<br>교통검색부터 지하철민원, 열차예매, 숙박까지 해결하세요.<br>아래 메뉴를 선택해 주세요~"
+                    "message": "언제 어떻게 가지? 어디가지? 머하지?<br>철도중심의 대중 교통 플랫폼 <span>가지<\/span>입니다.<br>아래 메뉴를 선택해 주세요~"
                 }
             }
         ],
@@ -22,13 +22,7 @@
     "id": "메인_처음",
     "user_area": null,
     "input_area": {
-        "home": {
-            "type": "postback",
-            "template": {
-                "query": "메인_메뉴",
-                "args": null
-            }
-        },
+        "home": null,
         "slide_info": {
             "status": {
                 "slide_on": true
@@ -52,10 +46,34 @@
                                     {
                                         "type": "postback",
                                         "value": {
+                                            "query": "히스토리_이전_최근",
+                                            "args": null
+                                        },
+                                        "text": "이어서 하기"
+                                    },
+                                    {
+                                        "type": "postback",
+                                        "value": {
                                             "query": "교통_처음",
                                             "args": null
                                         },
                                         "text": "통합교통 경로검색"
+                                    },
+                                    {
+                                        "type": "postback",
+                                        "value": {
+                                            "query": "지하철_처음",
+                                            "args": null
+                                        },
+                                        "text": "광역전철 지연증명\/이례사항 신고"
+                                    },
+                                    {
+                                        "type": "postback",
+                                        "value": {
+                                            "query": "기차_처음",
+                                            "args": null
+                                        },
+                                        "text": "기차 승차권 예매"
                                     }
                                 ]
                             }

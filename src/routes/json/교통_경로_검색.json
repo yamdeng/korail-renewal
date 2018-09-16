@@ -2,18 +2,18 @@
     "version": "1.1.0",
     "type": "replace_message",
     "service_type": 3,
-    "sequence": 1536048435536024,
-    "timestamp": 1536048435,
+    "sequence": 1536789525918579,
+    "timestamp": 1536789525,
     "source": {
-        "type": 3,
-        "userid": "Uff2ad4af513235b82e10256e30eddce7"
+        "type": 2,
+        "userid": "1838511392917687"
     },
     "message": {
         "templates": [
             {
                 "type": "text",
                 "template": {
-                    "message": "공덕코어에서 디비코까지 경로입니다."
+                    "message": "서울신석초등학교에서 인천신석초등학교까지 경로입니다."
                 }
             },
             {
@@ -22,7 +22,7 @@
                     "lists": [
                         {
                             "type": "route",
-                            "text": "지하철 4",
+                            "text": "버스 4",
                             "routes": [
                                 {
                                     "type": "route_contents",
@@ -31,249 +31,9 @@
                                             "type": "restful",
                                             "template": {
                                                 "method": "get",
-                                                "query": "/view/webchat/trans/route/detail",
+                                                "query": "\/trans\/route\/detail",
                                                 "args": {
                                                     "search_type": 0,
-                                                    "key": "3_get_latest_raw_data_Uff2ad4af513235b82e10256e30eddce7",
-                                                    "index": 6
-                                                }
-                                            }
-                                        }
-                                    },
-                                    "contents": {
-                                        "payment": 2950,
-                                        "total_time": 89,
-                                        "total_walk_time": 1088,
-                                        "transfer_count": 4,
-                                        "bus_station_count": 0,
-                                        "subway_station_count": 18,
-                                        "total_station_count": 18,
-                                        "total_distance": 36788,
-                                        "route": [
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 1,
-                                                "subway_name": "수도권 6호선",
-                                                "subway_code": 6,
-                                                "start_name": "공덕",
-                                                "end_name": "삼각지"
-                                            },
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 1,
-                                                "subway_name": "수도권 4호선",
-                                                "subway_code": 4,
-                                                "start_name": "삼각지",
-                                                "end_name": "사당"
-                                            },
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 1,
-                                                "subway_name": "수도권 2호선",
-                                                "subway_code": 2,
-                                                "start_name": "사당",
-                                                "end_name": "강남"
-                                            },
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 1,
-                                                "subway_name": "신분당선",
-                                                "subway_code": 109,
-                                                "start_name": "강남",
-                                                "end_name": "동천"
-                                            }
-                                        ]
-                                    },
-                                    "extra": []
-                                },
-                                {
-                                    "type": "route_contents",
-                                    "action": {
-                                        "detail": {
-                                            "type": "restful",
-                                            "template": {
-                                                "method": "get",
-                                                "query": "/view/webchat/trans/route/detail",
-                                                "args": {
-                                                    "search_type": 0,
-                                                    "key": "3_get_latest_raw_data_Uff2ad4af513235b82e10256e30eddce7",
-                                                    "index": 7
-                                                }
-                                            }
-                                        }
-                                    },
-                                    "contents": {
-                                        "payment": 1750,
-                                        "total_time": 101,
-                                        "total_walk_time": 1009,
-                                        "transfer_count": 2,
-                                        "bus_station_count": 0,
-                                        "subway_station_count": 33,
-                                        "total_station_count": 33,
-                                        "total_distance": 43209,
-                                        "route": [
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 1,
-                                                "subway_name": "수도권 5호선",
-                                                "subway_code": 5,
-                                                "start_name": "공덕",
-                                                "end_name": "왕십리"
-                                            },
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 1,
-                                                "subway_name": "분당선",
-                                                "subway_code": 100,
-                                                "start_name": "왕십리",
-                                                "end_name": "오리"
-                                            }
-                                        ]
-                                    },
-                                    "extra": []
-                                },
-                                {
-                                    "type": "route_contents",
-                                    "action": {
-                                        "detail": {
-                                            "type": "restful",
-                                            "template": {
-                                                "method": "get",
-                                                "query": "/view/webchat/trans/route/detail",
-                                                "args": {
-                                                    "search_type": 0,
-                                                    "key": "3_get_latest_raw_data_Uff2ad4af513235b82e10256e30eddce7",
-                                                    "index": 8
-                                                }
-                                            }
-                                        }
-                                    },
-                                    "contents": {
-                                        "payment": 2650,
-                                        "total_time": 94,
-                                        "total_walk_time": 964,
-                                        "transfer_count": 5,
-                                        "bus_station_count": 0,
-                                        "subway_station_count": 18,
-                                        "total_station_count": 18,
-                                        "total_distance": 36164,
-                                        "route": [
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 1,
-                                                "subway_name": "수도권 6호선",
-                                                "subway_code": 6,
-                                                "start_name": "공덕",
-                                                "end_name": "삼각지"
-                                            },
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 1,
-                                                "subway_name": "수도권 4호선",
-                                                "subway_code": 4,
-                                                "start_name": "삼각지",
-                                                "end_name": "사당"
-                                            },
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 1,
-                                                "subway_name": "수도권 2호선",
-                                                "subway_code": 2,
-                                                "start_name": "사당",
-                                                "end_name": "강남"
-                                            },
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 1,
-                                                "subway_name": "신분당선",
-                                                "subway_code": 109,
-                                                "start_name": "강남",
-                                                "end_name": "미금"
-                                            },
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 1,
-                                                "subway_name": "분당선",
-                                                "subway_code": 100,
-                                                "start_name": "미금",
-                                                "end_name": "오리"
-                                            }
-                                        ]
-                                    },
-                                    "extra": []
-                                },
-                                {
-                                    "type": "route_contents",
-                                    "action": {
-                                        "detail": {
-                                            "type": "restful",
-                                            "template": {
-                                                "method": "get",
-                                                "query": "/view/webchat/trans/route/detail",
-                                                "args": {
-                                                    "search_type": 0,
-                                                    "key": "3_get_latest_raw_data_Uff2ad4af513235b82e10256e30eddce7",
-                                                    "index": 10
-                                                }
-                                            }
-                                        }
-                                    },
-                                    "contents": {
-                                        "payment": 2950,
-                                        "total_time": 91,
-                                        "total_walk_time": 1088,
-                                        "transfer_count": 3,
-                                        "bus_station_count": 0,
-                                        "subway_station_count": 22,
-                                        "total_station_count": 22,
-                                        "total_distance": 38688,
-                                        "route": [
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 1,
-                                                "subway_name": "수도권 6호선",
-                                                "subway_code": 6,
-                                                "start_name": "공덕",
-                                                "end_name": "약수"
-                                            },
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 1,
-                                                "subway_name": "수도권 3호선",
-                                                "subway_code": 3,
-                                                "start_name": "약수",
-                                                "end_name": "양재"
-                                            },
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 1,
-                                                "subway_name": "신분당선",
-                                                "subway_code": 109,
-                                                "start_name": "양재",
-                                                "end_name": "동천"
-                                            }
-                                        ]
-                                    },
-                                    "extra": []
-                                }
-                            ],
-                            "extra": false
-                        },
-                        {
-                            "type": "route",
-                            "text": "버스 10",
-                            "routes": [
-                                {
-                                    "type": "route_contents",
-                                    "action": {
-                                        "detail": {
-                                            "type": "restful",
-                                            "template": {
-                                                "method": "get",
-                                                "query": "/view/webchat/trans/route/detail",
-                                                "args": {
-                                                    "search_type": 0,
-                                                    "key": "3_get_latest_raw_data_Uff2ad4af513235b82e10256e30eddce7",
                                                     "index": 4
                                                 }
                                             }
@@ -281,167 +41,37 @@
                                     },
                                     "contents": {
                                         "payment": 2500,
-                                        "total_time": 71,
-                                        "total_walk_time": 629,
-                                        "transfer_count": 2,
-                                        "bus_station_count": 13,
-                                        "subway_station_count": 0,
-                                        "total_station_count": 13,
-                                        "total_distance": 35029,
-                                        "route": [
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 2,
-                                                "bus_no": "261",
-                                                "bus_type": 11,
-                                                "start_name": "신덕성결교회",
-                                                "end_name": "서울역버스환승센터 6"
-                                            },
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 2,
-                                                "bus_no": "8100",
-                                                "bus_type": 6,
-                                                "start_name": "서울역버스환승센터 5",
-                                                "end_name": "오리역"
-                                            }
-                                        ]
-                                    },
-                                    "extra": []
-                                },
-                                {
-                                    "type": "route_contents",
-                                    "action": {
-                                        "detail": {
-                                            "type": "restful",
-                                            "template": {
-                                                "method": "get",
-                                                "query": "/view/webchat/trans/route/detail",
-                                                "args": {
-                                                    "search_type": 0,
-                                                    "key": "3_get_latest_raw_data_Uff2ad4af513235b82e10256e30eddce7",
-                                                    "index": 9
-                                                }
-                                            }
-                                        }
-                                    },
-                                    "contents": {
-                                        "payment": 2500,
-                                        "total_time": 70,
-                                        "total_walk_time": 619,
-                                        "transfer_count": 2,
-                                        "bus_station_count": 13,
-                                        "subway_station_count": 0,
-                                        "total_station_count": 13,
-                                        "total_distance": 35017,
-                                        "route": [
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 2,
-                                                "bus_no": "604",
-                                                "bus_type": 11,
-                                                "start_name": "신덕성결교회",
-                                                "end_name": "서울역버스환승센터 5"
-                                            },
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 2,
-                                                "bus_no": "8100",
-                                                "bus_type": 6,
-                                                "start_name": "서울역버스환승센터 5",
-                                                "end_name": "오리역"
-                                            }
-                                        ]
-                                    },
-                                    "extra": []
-                                },
-                                {
-                                    "type": "route_contents",
-                                    "action": {
-                                        "detail": {
-                                            "type": "restful",
-                                            "template": {
-                                                "method": "get",
-                                                "query": "/view/webchat/trans/route/detail",
-                                                "args": {
-                                                    "search_type": 0,
-                                                    "key": "3_get_latest_raw_data_Uff2ad4af513235b82e10256e30eddce7",
-                                                    "index": 11
-                                                }
-                                            }
-                                        }
-                                    },
-                                    "contents": {
-                                        "payment": 2500,
-                                        "total_time": 75,
-                                        "total_walk_time": 846,
-                                        "transfer_count": 2,
+                                        "total_time": 77,
+                                        "total_walk_time": 500,
+                                        "transfer_count": 3,
                                         "bus_station_count": 14,
                                         "subway_station_count": 0,
                                         "total_station_count": 14,
-                                        "total_distance": 35754,
+                                        "total_distance": 28343,
                                         "route": [
                                             {
                                                 "search_type": 0,
                                                 "traffic_type": 2,
                                                 "bus_no": "7013A",
                                                 "bus_type": 12,
-                                                "start_name": "아현동주민센터",
-                                                "end_name": "서울역버스환승센터 5"
+                                                "start_name": "신수동주민센터",
+                                                "end_name": "합정역"
                                             },
                                             {
                                                 "search_type": 0,
                                                 "traffic_type": 2,
-                                                "bus_no": "8100",
-                                                "bus_type": 6,
-                                                "start_name": "서울역버스환승센터 5",
-                                                "end_name": "오리역"
-                                            }
-                                        ]
-                                    },
-                                    "extra": []
-                                },
-                                {
-                                    "type": "route_contents",
-                                    "action": {
-                                        "detail": {
-                                            "type": "restful",
-                                            "template": {
-                                                "method": "get",
-                                                "query": "/view/webchat/trans/route/detail",
-                                                "args": {
-                                                    "search_type": 0,
-                                                    "key": "3_get_latest_raw_data_Uff2ad4af513235b82e10256e30eddce7",
-                                                    "index": 12
-                                                }
-                                            }
-                                        }
-                                    },
-                                    "contents": {
-                                        "payment": 2500,
-                                        "total_time": 79,
-                                        "total_walk_time": 410,
-                                        "transfer_count": 2,
-                                        "bus_station_count": 31,
-                                        "subway_station_count": 0,
-                                        "total_station_count": 31,
-                                        "total_distance": 37014,
-                                        "route": [
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 2,
-                                                "bus_no": "261",
-                                                "bus_type": 11,
-                                                "start_name": "신덕성결교회",
-                                                "end_name": "서울역버스환승센터 6"
-                                            },
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 2,
-                                                "bus_no": "9401",
+                                                "bus_no": "1000",
                                                 "bus_type": 14,
-                                                "start_name": "서울역버스환승센터 5",
-                                                "end_name": "낙생농협.오리역"
+                                                "start_name": "합정역",
+                                                "end_name": "신현치안센터"
+                                            },
+                                            {
+                                                "search_type": 0,
+                                                "traffic_type": 2,
+                                                "bus_no": "202",
+                                                "bus_type": 11,
+                                                "start_name": "신현치안센터",
+                                                "end_name": "SK인천석유화학"
                                             }
                                         ]
                                     },
@@ -454,11 +84,10 @@
                                             "type": "restful",
                                             "template": {
                                                 "method": "get",
-                                                "query": "/view/webchat/trans/route/detail",
+                                                "query": "\/trans\/route\/detail",
                                                 "args": {
                                                     "search_type": 0,
-                                                    "key": "3_get_latest_raw_data_Uff2ad4af513235b82e10256e30eddce7",
-                                                    "index": 13
+                                                    "index": 5
                                                 }
                                             }
                                         }
@@ -466,166 +95,36 @@
                                     "contents": {
                                         "payment": 2500,
                                         "total_time": 78,
-                                        "total_walk_time": 1043,
-                                        "transfer_count": 2,
-                                        "bus_station_count": 18,
+                                        "total_walk_time": 500,
+                                        "transfer_count": 3,
+                                        "bus_station_count": 15,
                                         "subway_station_count": 0,
-                                        "total_station_count": 18,
-                                        "total_distance": 32549,
+                                        "total_station_count": 15,
+                                        "total_distance": 28412,
                                         "route": [
                                             {
                                                 "search_type": 0,
                                                 "traffic_type": 2,
-                                                "bus_no": "110B",
-                                                "bus_type": 11,
-                                                "start_name": "공덕오거리",
-                                                "end_name": "순천향대학병원.한남오거리"
-                                            },
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 2,
-                                                "bus_no": "8100",
-                                                "bus_type": 6,
-                                                "start_name": "순천향대학병원",
-                                                "end_name": "오리역"
-                                            }
-                                        ]
-                                    },
-                                    "extra": []
-                                },
-                                {
-                                    "type": "route_contents",
-                                    "action": {
-                                        "detail": {
-                                            "type": "restful",
-                                            "template": {
-                                                "method": "get",
-                                                "query": "/view/webchat/trans/route/detail",
-                                                "args": {
-                                                    "search_type": 0,
-                                                    "key": "3_get_latest_raw_data_Uff2ad4af513235b82e10256e30eddce7",
-                                                    "index": 14
-                                                }
-                                            }
-                                        }
-                                    },
-                                    "contents": {
-                                        "payment": 2500,
-                                        "total_time": 78,
-                                        "total_walk_time": 400,
-                                        "transfer_count": 2,
-                                        "bus_station_count": 31,
-                                        "subway_station_count": 0,
-                                        "total_station_count": 31,
-                                        "total_distance": 37002,
-                                        "route": [
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 2,
-                                                "bus_no": "604",
-                                                "bus_type": 11,
-                                                "start_name": "신덕성결교회",
-                                                "end_name": "서울역버스환승센터 5"
-                                            },
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 2,
-                                                "bus_no": "9401",
-                                                "bus_type": 14,
-                                                "start_name": "서울역버스환승센터 5",
-                                                "end_name": "낙생농협.오리역"
-                                            }
-                                        ]
-                                    },
-                                    "extra": []
-                                },
-                                {
-                                    "type": "route_contents",
-                                    "action": {
-                                        "detail": {
-                                            "type": "restful",
-                                            "template": {
-                                                "method": "get",
-                                                "query": "/view/webchat/trans/route/detail",
-                                                "args": {
-                                                    "search_type": 0,
-                                                    "key": "3_get_latest_raw_data_Uff2ad4af513235b82e10256e30eddce7",
-                                                    "index": 15
-                                                }
-                                            }
-                                        }
-                                    },
-                                    "contents": {
-                                        "payment": 2500,
-                                        "total_time": 83,
-                                        "total_walk_time": 627,
-                                        "transfer_count": 2,
-                                        "bus_station_count": 32,
-                                        "subway_station_count": 0,
-                                        "total_station_count": 32,
-                                        "total_distance": 37739,
-                                        "route": [
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 2,
-                                                "bus_no": "7013A",
+                                                "bus_no": "7013B",
                                                 "bus_type": 12,
-                                                "start_name": "아현동주민센터",
-                                                "end_name": "서울역버스환승센터 5"
+                                                "start_name": "신수동주민센터",
+                                                "end_name": "합정역"
                                             },
                                             {
                                                 "search_type": 0,
                                                 "traffic_type": 2,
-                                                "bus_no": "9401",
+                                                "bus_no": "1000",
                                                 "bus_type": 14,
-                                                "start_name": "서울역버스환승센터 5",
-                                                "end_name": "낙생농협.오리역"
-                                            }
-                                        ]
-                                    },
-                                    "extra": []
-                                },
-                                {
-                                    "type": "route_contents",
-                                    "action": {
-                                        "detail": {
-                                            "type": "restful",
-                                            "template": {
-                                                "method": "get",
-                                                "query": "/view/webchat/trans/route/detail",
-                                                "args": {
-                                                    "search_type": 0,
-                                                    "key": "3_get_latest_raw_data_Uff2ad4af513235b82e10256e30eddce7",
-                                                    "index": 16
-                                                }
-                                            }
-                                        }
-                                    },
-                                    "contents": {
-                                        "payment": 2400,
-                                        "total_time": 85,
-                                        "total_walk_time": 824,
-                                        "transfer_count": 2,
-                                        "bus_station_count": 36,
-                                        "subway_station_count": 0,
-                                        "total_station_count": 36,
-                                        "total_distance": 34534,
-                                        "route": [
+                                                "start_name": "합정역",
+                                                "end_name": "신현치안센터"
+                                            },
                                             {
                                                 "search_type": 0,
                                                 "traffic_type": 2,
-                                                "bus_no": "110B",
+                                                "bus_no": "202",
                                                 "bus_type": 11,
-                                                "start_name": "공덕오거리",
-                                                "end_name": "순천향대학병원.한남오거리"
-                                            },
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 2,
-                                                "bus_no": "9401",
-                                                "bus_type": 14,
-                                                "start_name": "순천향대학병원",
-                                                "end_name": "낙생농협.오리역"
+                                                "start_name": "신현치안센터",
+                                                "end_name": "SK인천석유화학"
                                             }
                                         ]
                                     },
@@ -638,40 +137,47 @@
                                             "type": "restful",
                                             "template": {
                                                 "method": "get",
-                                                "query": "/view/webchat/trans/route/detail",
+                                                "query": "\/trans\/route\/detail",
                                                 "args": {
                                                     "search_type": 0,
-                                                    "key": "3_get_latest_raw_data_Uff2ad4af513235b82e10256e30eddce7",
-                                                    "index": 17
+                                                    "index": 6
                                                 }
                                             }
                                         }
                                     },
                                     "contents": {
-                                        "payment": 2600,
+                                        "payment": 2500,
                                         "total_time": 84,
-                                        "total_walk_time": 1134,
-                                        "transfer_count": 2,
-                                        "bus_station_count": 20,
+                                        "total_walk_time": 726,
+                                        "transfer_count": 3,
+                                        "bus_station_count": 17,
                                         "subway_station_count": 0,
-                                        "total_station_count": 20,
-                                        "total_distance": 36767,
+                                        "total_station_count": 17,
+                                        "total_distance": 30004,
                                         "route": [
                                             {
                                                 "search_type": 0,
                                                 "traffic_type": 2,
-                                                "bus_no": "1711",
-                                                "bus_type": 12,
-                                                "start_name": "공덕역10번출구",
-                                                "end_name": "서울역버스환승센터 7"
+                                                "bus_no": "마포12",
+                                                "bus_type": 3,
+                                                "start_name": "신수현대아파트.래미안웰스트림",
+                                                "end_name": "신촌전철역.그랜드마트"
                                             },
                                             {
                                                 "search_type": 0,
                                                 "traffic_type": 2,
-                                                "bus_no": "8100",
-                                                "bus_type": 6,
-                                                "start_name": "서울역버스환승센터 5",
-                                                "end_name": "오리역"
+                                                "bus_no": "1000",
+                                                "bus_type": 14,
+                                                "start_name": "신촌오거리.현대백화점",
+                                                "end_name": "신현치안센터"
+                                            },
+                                            {
+                                                "search_type": 0,
+                                                "traffic_type": 2,
+                                                "bus_no": "202",
+                                                "bus_type": 11,
+                                                "start_name": "신현초등학교",
+                                                "end_name": "SK인천석유화학"
                                             }
                                         ]
                                     },
@@ -684,51 +190,60 @@
                                             "type": "restful",
                                             "template": {
                                                 "method": "get",
-                                                "query": "/view/webchat/trans/route/detail",
+                                                "query": "\/trans\/route\/detail",
                                                 "args": {
                                                     "search_type": 0,
-                                                    "key": "3_get_latest_raw_data_Uff2ad4af513235b82e10256e30eddce7",
-                                                    "index": 18
+                                                    "index": 7
                                                 }
                                             }
                                         }
                                     },
                                     "contents": {
                                         "payment": 2600,
-                                        "total_time": 81,
-                                        "total_walk_time": 410,
-                                        "transfer_count": 2,
-                                        "bus_station_count": 33,
+                                        "total_time": 83,
+                                        "total_walk_time": 726,
+                                        "transfer_count": 3,
+                                        "bus_station_count": 15,
                                         "subway_station_count": 0,
-                                        "total_station_count": 33,
-                                        "total_distance": 38185,
+                                        "total_station_count": 15,
+                                        "total_distance": 30000,
                                         "route": [
                                             {
                                                 "search_type": 0,
                                                 "traffic_type": 2,
-                                                "bus_no": "261",
-                                                "bus_type": 11,
-                                                "start_name": "신덕성결교회",
-                                                "end_name": "서울역버스환승센터 6"
+                                                "bus_no": "마포12",
+                                                "bus_type": 3,
+                                                "start_name": "신수현대아파트.래미안웰스트림",
+                                                "end_name": "신촌전철역.그랜드마트"
                                             },
                                             {
                                                 "search_type": 0,
                                                 "traffic_type": 2,
-                                                "bus_no": "9000",
-                                                "bus_type": 4,
-                                                "start_name": "서울역버스환승센터 5",
-                                                "end_name": "낙생농협.오리역"
+                                                "bus_no": "M6628",
+                                                "bus_type": 14,
+                                                "start_name": "신촌오거리.현대백화점",
+                                                "end_name": "신현치안센터"
+                                            },
+                                            {
+                                                "search_type": 0,
+                                                "traffic_type": 2,
+                                                "bus_no": "202",
+                                                "bus_type": 11,
+                                                "start_name": "신현초등학교",
+                                                "end_name": "SK인천석유화학"
                                             }
                                         ]
                                     },
                                     "extra": []
                                 }
                             ],
-                            "extra": false
+                            "extra": {
+                                "path_type": 2
+                            }
                         },
                         {
                             "type": "route",
-                            "text": "지하철+버스 5",
+                            "text": "지하철+버스 4",
                             "routes": [
                                 {
                                     "type": "route_contents",
@@ -737,40 +252,47 @@
                                             "type": "restful",
                                             "template": {
                                                 "method": "get",
-                                                "query": "/view/webchat/trans/route/detail",
+                                                "query": "\/trans\/route\/detail",
                                                 "args": {
                                                     "search_type": 0,
-                                                    "key": "3_get_latest_raw_data_Uff2ad4af513235b82e10256e30eddce7",
                                                     "index": 0
                                                 }
                                             }
                                         }
                                     },
                                     "contents": {
-                                        "payment": 2950,
-                                        "total_time": 78,
-                                        "total_walk_time": 1298,
-                                        "transfer_count": 2,
-                                        "bus_station_count": 17,
-                                        "subway_station_count": 7,
-                                        "total_station_count": 24,
-                                        "total_distance": 32507,
+                                        "payment": 1850,
+                                        "total_time": 92,
+                                        "total_walk_time": 1153,
+                                        "transfer_count": 3,
+                                        "bus_station_count": 16,
+                                        "subway_station_count": 6,
+                                        "total_station_count": 22,
+                                        "total_distance": 38684,
                                         "route": [
                                             {
                                                 "search_type": 0,
-                                                "traffic_type": 2,
-                                                "bus_no": "740",
-                                                "bus_type": 11,
-                                                "start_name": "공덕오거리",
-                                                "end_name": "강남역.역삼세무서"
+                                                "traffic_type": 1,
+                                                "subway_name": "수도권 6호선",
+                                                "subway_code": 6,
+                                                "start_name": "대흥",
+                                                "end_name": "공덕"
                                             },
                                             {
                                                 "search_type": 0,
                                                 "traffic_type": 1,
-                                                "subway_name": "신분당선",
-                                                "subway_code": 109,
-                                                "start_name": "강남",
-                                                "end_name": "동천"
+                                                "subway_name": "공항철도",
+                                                "subway_code": 101,
+                                                "start_name": "공덕",
+                                                "end_name": "검암"
+                                            },
+                                            {
+                                                "search_type": 0,
+                                                "traffic_type": 2,
+                                                "bus_no": "13",
+                                                "bus_type": 11,
+                                                "start_name": "검암역입구",
+                                                "end_name": "월드메드디앙아파트"
                                             }
                                         ]
                                     },
@@ -783,40 +305,47 @@
                                             "type": "restful",
                                             "template": {
                                                 "method": "get",
-                                                "query": "/view/webchat/trans/route/detail",
+                                                "query": "\/trans\/route\/detail",
                                                 "args": {
                                                     "search_type": 0,
-                                                    "key": "3_get_latest_raw_data_Uff2ad4af513235b82e10256e30eddce7",
                                                     "index": 1
                                                 }
                                             }
                                         }
                                     },
                                     "contents": {
-                                        "payment": 3000,
-                                        "total_time": 79,
-                                        "total_walk_time": 1442,
-                                        "transfer_count": 2,
-                                        "bus_station_count": 8,
-                                        "subway_station_count": 1,
-                                        "total_station_count": 9,
-                                        "total_distance": 36510,
+                                        "payment": 1750,
+                                        "total_time": 99,
+                                        "total_walk_time": 972,
+                                        "transfer_count": 3,
+                                        "bus_station_count": 20,
+                                        "subway_station_count": 7,
+                                        "total_station_count": 27,
+                                        "total_distance": 44591,
                                         "route": [
+                                            {
+                                                "search_type": 0,
+                                                "traffic_type": 1,
+                                                "subway_name": "수도권 6호선",
+                                                "subway_code": 6,
+                                                "start_name": "대흥",
+                                                "end_name": "공덕"
+                                            },
                                             {
                                                 "search_type": 0,
                                                 "traffic_type": 1,
                                                 "subway_name": "공항철도",
                                                 "subway_code": 101,
                                                 "start_name": "공덕",
-                                                "end_name": "서울역"
+                                                "end_name": "청라국제도시"
                                             },
                                             {
                                                 "search_type": 0,
                                                 "traffic_type": 2,
-                                                "bus_no": "8100",
-                                                "bus_type": 6,
-                                                "start_name": "서울역버스환승센터 5",
-                                                "end_name": "오리역"
+                                                "bus_no": "42-2",
+                                                "bus_type": 11,
+                                                "start_name": "청라국제도시역",
+                                                "end_name": "SK인천석유화학"
                                             }
                                         ]
                                     },
@@ -829,94 +358,47 @@
                                             "type": "restful",
                                             "template": {
                                                 "method": "get",
-                                                "query": "/view/webchat/trans/route/detail",
+                                                "query": "\/trans\/route\/detail",
                                                 "args": {
                                                     "search_type": 0,
-                                                    "key": "3_get_latest_raw_data_Uff2ad4af513235b82e10256e30eddce7",
                                                     "index": 2
                                                 }
                                             }
                                         }
                                     },
                                     "contents": {
-                                        "payment": 2950,
-                                        "total_time": 84,
-                                        "total_walk_time": 1116,
+                                        "payment": 1750,
+                                        "total_time": 99,
+                                        "total_walk_time": 993,
                                         "transfer_count": 3,
-                                        "bus_station_count": 14,
-                                        "subway_station_count": 8,
-                                        "total_station_count": 22,
-                                        "total_distance": 32181,
+                                        "bus_station_count": 19,
+                                        "subway_station_count": 7,
+                                        "total_station_count": 26,
+                                        "total_distance": 44783,
                                         "route": [
                                             {
                                                 "search_type": 0,
-                                                "traffic_type": 2,
-                                                "bus_no": "740",
-                                                "bus_type": 11,
-                                                "start_name": "공덕오거리",
-                                                "end_name": "지하철2호선교대역2"
-                                            },
-                                            {
-                                                "search_type": 0,
                                                 "traffic_type": 1,
-                                                "subway_name": "수도권 2호선",
-                                                "subway_code": 2,
-                                                "start_name": "교대",
-                                                "end_name": "강남"
+                                                "subway_name": "수도권 6호선",
+                                                "subway_code": 6,
+                                                "start_name": "대흥",
+                                                "end_name": "공덕"
                                             },
-                                            {
-                                                "search_type": 0,
-                                                "traffic_type": 1,
-                                                "subway_name": "신분당선",
-                                                "subway_code": 109,
-                                                "start_name": "강남",
-                                                "end_name": "동천"
-                                            }
-                                        ]
-                                    },
-                                    "extra": []
-                                },
-                                {
-                                    "type": "route_contents",
-                                    "action": {
-                                        "detail": {
-                                            "type": "restful",
-                                            "template": {
-                                                "method": "get",
-                                                "query": "/view/webchat/trans/route/detail",
-                                                "args": {
-                                                    "search_type": 0,
-                                                    "key": "3_get_latest_raw_data_Uff2ad4af513235b82e10256e30eddce7",
-                                                    "index": 3
-                                                }
-                                            }
-                                        }
-                                    },
-                                    "contents": {
-                                        "payment": 2900,
-                                        "total_time": 87,
-                                        "total_walk_time": 1223,
-                                        "transfer_count": 2,
-                                        "bus_station_count": 26,
-                                        "subway_station_count": 1,
-                                        "total_station_count": 27,
-                                        "total_distance": 38495,
-                                        "route": [
                                             {
                                                 "search_type": 0,
                                                 "traffic_type": 1,
                                                 "subway_name": "공항철도",
                                                 "subway_code": 101,
                                                 "start_name": "공덕",
-                                                "end_name": "서울역"
+                                                "end_name": "청라국제도시"
                                             },
                                             {
                                                 "search_type": 0,
                                                 "traffic_type": 2,
-                                                "bus_no": "9401",
-                                                "bus_type": 14,
-                                                "start_name": "서울역버스환승센터 5",
-                                                "end_name": "낙생농협.오리역"
+                                                "bus_no": "40",
+                                                "bus_type": 11,
+                                                "start_name": "청라국제도시역",
+                                                "end_name": "효성아파트"
                                             }
                                         ]
                                     },
@@ -929,266 +411,331 @@
                                             "type": "restful",
                                             "template": {
                                                 "method": "get",
-                                                "query": "/view/webchat/trans/route/detail",
+                                                "query": "\/trans\/route\/detail",
                                                 "args": {
                                                     "search_type": 0,
-                                                    "key": "3_get_latest_raw_data_Uff2ad4af513235b82e10256e30eddce7",
-                                                    "index": 5
+                                                    "index": 3
                                                 }
                                             }
                                         }
                                     },
                                     "contents": {
-                                        "payment": 2900,
-                                        "total_time": 88,
-                                        "total_walk_time": 1227,
+                                        "payment": 1750,
+                                        "total_time": 105,
+                                        "total_walk_time": 1091,
                                         "transfer_count": 3,
-                                        "bus_station_count": 6,
-                                        "subway_station_count": 4,
-                                        "total_station_count": 10,
-                                        "total_distance": 35006,
+                                        "bus_station_count": 22,
+                                        "subway_station_count": 7,
+                                        "total_station_count": 29,
+                                        "total_distance": 46731,
                                         "route": [
                                             {
                                                 "search_type": 0,
                                                 "traffic_type": 1,
-                                                "subway_name": "수도권 5호선",
-                                                "subway_code": 5,
-                                                "start_name": "공덕",
-                                                "end_name": "충정로"
+                                                "subway_name": "수도권 6호선",
+                                                "subway_code": 6,
+                                                "start_name": "대흥",
+                                                "end_name": "공덕"
                                             },
                                             {
                                                 "search_type": 0,
                                                 "traffic_type": 1,
-                                                "subway_name": "수도권 2호선",
-                                                "subway_code": 2,
-                                                "start_name": "충정로",
-                                                "end_name": "을지로입구"
+                                                "subway_name": "공항철도",
+                                                "subway_code": 101,
+                                                "start_name": "공덕",
+                                                "end_name": "청라국제도시"
                                             },
                                             {
                                                 "search_type": 0,
                                                 "traffic_type": 2,
-                                                "bus_no": "8100",
-                                                "bus_type": 6,
-                                                "start_name": "명동국민은행앞",
-                                                "end_name": "오리역"
+                                                "bus_no": "904",
+                                                "bus_type": 26,
+                                                "start_name": "청라국제도시역",
+                                                "end_name": "월드메드디앙아파트"
                                             }
                                         ]
                                     },
                                     "extra": []
                                 }
                             ],
-                            "extra": false
+                            "extra": {
+                                "path_type": 3
+                            }
                         }
                     ],
                     "extra": {
-                        "extra": {
+                        "route_data": {
                             "start": {
-                                "name": "공덕코어",
-                                "position_name": "공덕코어",
-                                "lng": "126.9559517",
-                                "lat": "37.545905"
+                                "lng": 126.938014,
+                                "lat": 37.5443937,
+                                "name": "서울신석초등학교"
                             },
                             "end": {
-                                "name": "디비코",
-                                "position_name": "디비코",
-                                "lng": "127.1093327",
-                                "lat": "37.3351291"
+                                "lng": 126.6644156,
+                                "lat": 37.5112907,
+                                "name": "인천신석초등학교"
                             },
-                            "searchType": 0,
-                            "recommend": {
-                                "time": {
-                                    "buttons": [
-                                        {
-                                            "type": "route_contents",
-                                            "action": {
-                                                "detail": {
-                                                    "type": "restful",
-                                                    "template": {
-                                                        "method": "get",
-                                                        "query": "/view/webchat/trans/route/detail",
-                                                        "args": {
-                                                            "search_type": 0,
-                                                            "key": "3_get_latest_raw_data_Uff2ad4af513235b82e10256e30eddce7",
-                                                            "index": 9
-                                                        }
+                            "searchType": 0
+                        },
+                        "recommend": {
+                            "time": {
+                                "buttons": [
+                                    {
+                                        "type": "route_contents",
+                                        "action": {
+                                            "detail": {
+                                                "type": "restful",
+                                                "template": {
+                                                    "method": "get",
+                                                    "query": "\/trans\/route\/detail",
+                                                    "args": {
+                                                        "search_type": 0,
+                                                        "index": 4
                                                     }
                                                 }
-                                            },
-                                            "contents": {
-                                                "payment": 2500,
-                                                "total_time": 70,
-                                                "total_walk_time": 619,
-                                                "transfer_count": 2,
-                                                "bus_station_count": 13,
-                                                "subway_station_count": 0,
-                                                "total_station_count": 13,
-                                                "total_distance": 35017,
-                                                "route": [
-                                                    {
-                                                        "search_type": 0,
-                                                        "traffic_type": 2,
-                                                        "bus_no": "604",
-                                                        "bus_type": 11,
-                                                        "start_name": "신덕성결교회",
-                                                        "end_name": "서울역버스환승센터 5"
-                                                    },
-                                                    {
-                                                        "search_type": 0,
-                                                        "traffic_type": 2,
-                                                        "bus_no": "8100",
-                                                        "bus_type": 6,
-                                                        "start_name": "서울역버스환승센터 5",
-                                                        "end_name": "오리역"
-                                                    }
-                                                ]
-                                            },
-                                            "extra": []
-                                        }
-                                    ]
-                                },
-                                "payment": {
-                                    "buttons": [
-                                        {
-                                            "type": "route_contents",
-                                            "action": {
-                                                "detail": {
-                                                    "type": "restful",
-                                                    "template": {
-                                                        "method": "get",
-                                                        "query": "/view/webchat/trans/route/detail",
-                                                        "args": {
-                                                            "search_type": 0,
-                                                            "key": "3_get_latest_raw_data_Uff2ad4af513235b82e10256e30eddce7",
-                                                            "index": 7
-                                                        }
-                                                    }
-                                                }
-                                            },
-                                            "contents": {
-                                                "payment": 1750,
-                                                "total_time": 101,
-                                                "total_walk_time": 1009,
-                                                "transfer_count": 2,
-                                                "bus_station_count": 0,
-                                                "subway_station_count": 33,
-                                                "total_station_count": 33,
-                                                "total_distance": 43209,
-                                                "route": [
-                                                    {
-                                                        "search_type": 0,
-                                                        "traffic_type": 1,
-                                                        "subway_name": "수도권 5호선",
-                                                        "subway_code": 5,
-                                                        "start_name": "공덕",
-                                                        "end_name": "왕십리"
-                                                    },
-                                                    {
-                                                        "search_type": 0,
-                                                        "traffic_type": 1,
-                                                        "subway_name": "분당선",
-                                                        "subway_code": 100,
-                                                        "start_name": "왕십리",
-                                                        "end_name": "오리"
-                                                    }
-                                                ]
-                                            },
-                                            "extra": []
-                                        }
-                                    ]
-                                },
-                                "transfer": {
-                                    "buttons": [
-                                        {
-                                            "type": "route_contents",
-                                            "action": {
-                                                "detail": {
-                                                    "type": "restful",
-                                                    "template": {
-                                                        "method": "get",
-                                                        "query": "/view/webchat/trans/route/detail",
-                                                        "args": {
-                                                            "search_type": 0,
-                                                            "key": "3_get_latest_raw_data_Uff2ad4af513235b82e10256e30eddce7",
-                                                            "index": 18
-                                                        }
-                                                    }
-                                                }
-                                            },
-                                            "contents": {
-                                                "payment": 2600,
-                                                "total_time": 81,
-                                                "total_walk_time": 410,
-                                                "transfer_count": 2,
-                                                "bus_station_count": 33,
-                                                "subway_station_count": 0,
-                                                "total_station_count": 33,
-                                                "total_distance": 38185,
-                                                "route": [
-                                                    {
-                                                        "search_type": 0,
-                                                        "traffic_type": 2,
-                                                        "bus_no": "261",
-                                                        "bus_type": 11,
-                                                        "start_name": "신덕성결교회",
-                                                        "end_name": "서울역버스환승센터 6"
-                                                    },
-                                                    {
-                                                        "search_type": 0,
-                                                        "traffic_type": 2,
-                                                        "bus_no": "9000",
-                                                        "bus_type": 4,
-                                                        "start_name": "서울역버스환승센터 5",
-                                                        "end_name": "낙생농협.오리역"
-                                                    }
-                                                ]
-                                            },
-                                            "extra": []
-                                        }
-                                    ]
-                                }
-                            },
-                            "favorite": null,
-                            "filter": {
-                                "sortType": [
-                                    {
-                                        "no": 0,
-                                        "name": "최단시간",
-                                        "command": null,
-                                        "selected": true
-                                    },
-                                    {
-                                        "no": 1,
-                                        "name": "최저요금",
-                                        "command": null,
-                                        "selected": false
-                                    },
-                                    {
-                                        "no": 2,
-                                        "name": "최소환승",
-                                        "command": null,
-                                        "selected": false
-                                    }
-                                ],
-                                "searchType": [
-                                    {
-                                        "no": 0,
-                                        "name": "시내교통",
-                                        "command": null,
-                                        "selected": true
-                                    },
-                                    {
-                                        "no": 1,
-                                        "name": "시외교통",
-                                        "command": {
-                                            "type": "postback",
-                                            "template": {
-                                                "query": "교통_경로_검색_다른",
-                                                "args": null
                                             }
                                         },
-                                        "selected": false
+                                        "contents": {
+                                            "payment": 2500,
+                                            "total_time": 77,
+                                            "total_walk_time": 500,
+                                            "transfer_count": 3,
+                                            "bus_station_count": 14,
+                                            "subway_station_count": 0,
+                                            "total_station_count": 14,
+                                            "total_distance": 28343,
+                                            "route": [
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "7013A",
+                                                    "bus_type": 12,
+                                                    "start_name": "신수동주민센터",
+                                                    "end_name": "합정역"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "1000",
+                                                    "bus_type": 14,
+                                                    "start_name": "합정역",
+                                                    "end_name": "신현치안센터"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "202",
+                                                    "bus_type": 11,
+                                                    "start_name": "신현치안센터",
+                                                    "end_name": "SK인천석유화학"
+                                                }
+                                            ]
+                                        },
+                                        "extra": []
                                     }
                                 ]
+                            },
+                            "payment": {
+                                "buttons": [
+                                    {
+                                        "type": "route_contents",
+                                        "action": {
+                                            "detail": {
+                                                "type": "restful",
+                                                "template": {
+                                                    "method": "get",
+                                                    "query": "\/trans\/route\/detail",
+                                                    "args": {
+                                                        "search_type": 0,
+                                                        "index": 3
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "contents": {
+                                            "payment": 1750,
+                                            "total_time": 105,
+                                            "total_walk_time": 1091,
+                                            "transfer_count": 3,
+                                            "bus_station_count": 22,
+                                            "subway_station_count": 7,
+                                            "total_station_count": 29,
+                                            "total_distance": 46731,
+                                            "route": [
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 1,
+                                                    "subway_name": "수도권 6호선",
+                                                    "subway_code": 6,
+                                                    "start_name": "대흥",
+                                                    "end_name": "공덕"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 1,
+                                                    "subway_name": "공항철도",
+                                                    "subway_code": 101,
+                                                    "start_name": "공덕",
+                                                    "end_name": "청라국제도시"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "904",
+                                                    "bus_type": 26,
+                                                    "start_name": "청라국제도시역",
+                                                    "end_name": "월드메드디앙아파트"
+                                                }
+                                            ]
+                                        },
+                                        "extra": []
+                                    }
+                                ]
+                            },
+                            "transfer": {
+                                "buttons": [
+                                    {
+                                        "type": "route_contents",
+                                        "action": {
+                                            "detail": {
+                                                "type": "restful",
+                                                "template": {
+                                                    "method": "get",
+                                                    "query": "\/trans\/route\/detail",
+                                                    "args": {
+                                                        "search_type": 0,
+                                                        "index": 7
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "contents": {
+                                            "payment": 2600,
+                                            "total_time": 83,
+                                            "total_walk_time": 726,
+                                            "transfer_count": 3,
+                                            "bus_station_count": 15,
+                                            "subway_station_count": 0,
+                                            "total_station_count": 15,
+                                            "total_distance": 30000,
+                                            "route": [
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "마포12",
+                                                    "bus_type": 3,
+                                                    "start_name": "신수현대아파트.래미안웰스트림",
+                                                    "end_name": "신촌전철역.그랜드마트"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "M6628",
+                                                    "bus_type": 14,
+                                                    "start_name": "신촌오거리.현대백화점",
+                                                    "end_name": "신현치안센터"
+                                                },
+                                                {
+                                                    "search_type": 0,
+                                                    "traffic_type": 2,
+                                                    "bus_no": "202",
+                                                    "bus_type": 11,
+                                                    "start_name": "신현초등학교",
+                                                    "end_name": "SK인천석유화학"
+                                                }
+                                            ]
+                                        },
+                                        "extra": []
+                                    }
+                                ]
+                            }
+                        },
+                        "filter": {
+                            "sortType": [
+                                {
+                                    "no": 0,
+                                    "name": "최단시간",
+                                    "command": null,
+                                    "selected": true
+                                },
+                                {
+                                    "no": 1,
+                                    "name": "최저요금",
+                                    "command": null,
+                                    "selected": false
+                                },
+                                {
+                                    "no": 2,
+                                    "name": "최소환승",
+                                    "command": null,
+                                    "selected": false
+                                }
+                            ],
+                            "searchType": [
+                                {
+                                    "no": 0,
+                                    "name": "시내교통",
+                                    "command": null,
+                                    "selected": true
+                                },
+                                {
+                                    "no": 1,
+                                    "name": "시외교통",
+                                    "command": {
+                                        "type": "postback",
+                                        "template": {
+                                            "query": "교통_경로_검색_다른",
+                                            "args": null
+                                        }
+                                    },
+                                    "selected": false
+                                }
+                            ]
+                        },
+                        "favorite": {
+                            "is_added": false,
+                            "text": "경로 즐겨찾기",
+                            "action": {
+                                "add": {
+                                    "type": "restful",
+                                    "template": {
+                                        "method": "post",
+                                        "query": "\/trans\/favorite",
+                                        "args": {
+                                            "start": {
+                                                "lng": 126.938014,
+                                                "lat": 37.5443937,
+                                                "name": "서울신석초등학교"
+                                            },
+                                            "end": {
+                                                "lng": 126.6644156,
+                                                "lat": 37.5112907,
+                                                "name": "인천신석초등학교"
+                                            },
+                                            "searchType": 0
+                                        }
+                                    }
+                                },
+                                "del": {
+                                    "type": "restful",
+                                    "template": {
+                                        "method": "delete",
+                                        "query": "\/trans\/favorite",
+                                        "args": {
+                                            "start": {
+                                                "lng": 126.938014,
+                                                "lat": 37.5443937,
+                                                "name": "서울신석초등학교"
+                                            },
+                                            "end": {
+                                                "lng": 126.6644156,
+                                                "lat": 37.5112907,
+                                                "name": "인천신석초등학교"
+                                            },
+                                            "searchType": 0
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -1203,7 +750,7 @@
         "home": {
             "type": "postback",
             "template": {
-                "query": "메인_메뉴",
+                "query": "교통_처음",
                 "args": null
             }
         },
@@ -1241,20 +788,18 @@
                                             "query": "교통_시작",
                                             "args": {
                                                 "start": {
-                                                    "name": "공덕코어",
-                                                    "position_name": "공덕코어",
-                                                    "lng": "126.9559517",
-                                                    "lat": "37.545905"
+                                                    "lng": 126.938014,
+                                                    "lat": 37.5443937,
+                                                    "name": "서울신석초등학교"
                                                 },
                                                 "end": {
-                                                    "name": "디비코",
-                                                    "position_name": "디비코",
-                                                    "lng": "127.1093327",
-                                                    "lat": "37.3351291"
+                                                    "lng": 126.6644156,
+                                                    "lat": 37.5112907,
+                                                    "name": "인천신석초등학교"
                                                 }
                                             }
                                         },
-                                        "text": "출발지/도착지 수정하기"
+                                        "text": "출발지\/도착지 수정하기"
                                     }
                                 ]
                             }
