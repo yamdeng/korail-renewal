@@ -18,7 +18,9 @@ app.use(compress())
     .use(express.static(__dirname + '/../public'))
     .use(cookieParser())
     .use(bodyParser.json())
-    .use(bodyParser.urlencoded({ extended: true }))
+    .use(bodyParser.urlencoded({
+        extended: true
+    }))
     .options('*', cors())
     .use(cors());
 

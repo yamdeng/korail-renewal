@@ -6,6 +6,13 @@ const logger = require('../utils/logger');
 const cluster = require('cluster');
 // const errorRouteHandler = require('../errors/routeHandler');
 
+router.post('/formtest', function (req, res) {
+    const query = req.query;
+    console.log('req.query : ' + JSON.stringify(req.query));
+    console.log('req.body : ' + JSON.stringify(req.body));
+    res.send(req.body);
+});
+
 // 메모리 체크
 router.get('/memoryUsage', function (req, res) {
     let result = process.memoryUsage();

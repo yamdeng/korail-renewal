@@ -4,14 +4,14 @@ const router = express.Router();
 const fs = require('fs');
 // const logger = require('../utils/logger');
 
-router.post('/v1/webchat', function(req, res) {
+router.post('/v1/webchat', function (req, res) {
     const query = req.body.message.template.query;
     let jsonFileName = query;
-    if(query === '/trans/auto/keyword') {
+    if (query === '/trans/auto/keyword') {
         jsonFileName = '1차검색';
-    } else if(query === '/trans/search/address') {
+    } else if (query === '/trans/search/address') {
         jsonFileName = '2차검색';
-    }    
+    }
     let jsonString = fs.readFileSync(
         __dirname + '/json/' + jsonFileName + '.json',
         'utf8'
