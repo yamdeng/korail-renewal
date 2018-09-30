@@ -6,6 +6,12 @@ const logger = require('../utils/logger');
 const cluster = require('cluster');
 // const errorRouteHandler = require('../errors/routeHandler');
 
+router.get('/formtest', function (req, res) {
+    const query = req.query;
+    console.log('req.query : ' + JSON.stringify(req.query));
+    res.send(req.query);
+});
+
 router.post('/formtest', function (req, res) {
     const query = req.query;
     console.log('req.query : ' + JSON.stringify(req.query));
